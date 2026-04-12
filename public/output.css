@@ -903,6 +903,12 @@ input[type="range"]::-ms-fill-lower {
 .mt-20 {
   margin-top: 5rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
 .block {
   display: block;
 }
@@ -950,6 +956,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .h-8 {
   height: 2rem;
+}
+.h-\[500px\] {
+  height: 500px;
 }
 .w-28 {
   width: 7rem;
@@ -1032,6 +1041,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .max-w-xl {
   max-width: 36rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .translate-x-full {
   --tw-translate-x: 100%;
@@ -1382,6 +1394,9 @@ input[type="range"]::-ms-fill-lower {
 .text-\[42px\] {
   font-size: 42px;
 }
+.text-\[34px\] {
+  font-size: 34px;
+}
 .font-medium {
   font-weight: 500;
 }
@@ -1433,6 +1448,9 @@ input[type="range"]::-ms-fill-lower {
 .tracking-\[0\.4em\] {
   letter-spacing: 0.4em;
 }
+.tracking-\[0\.3em\] {
+  letter-spacing: 0.3em;
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1477,6 +1495,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-text-opacity: 1;
   color: rgb(184 154 90 / var(--tw-text-opacity));
 }
+.text-\[\#8a8576\] {
+  --tw-text-opacity: 1;
+  color: rgb(138 133 118 / var(--tw-text-opacity));
+}
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1520,6 +1542,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .navbar-active-site-wrapper {
@@ -1587,6 +1612,12 @@ input[type="range"]::-ms-fill-lower {
     top: 0px;
     border-radius: 0px;
   }
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-blue-700:hover {
@@ -1752,6 +1783,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:text-\[54px\] {
     font-size: 54px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
   }
 }
 
