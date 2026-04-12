@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TajPak - Home</title>
-  <link rel="Icon" href="./public/images/logo-white.png" type="image/x-icon">
+  <link rel="Icon" href="./public/images/logo-transparent copy.png" type="image/x-icon">
 
   <!-- External CSsS -->
   <link rel="stylesheet" href="./public/output.css">
   <link rel="stylesheet" href="./src/custom.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 
 </head>
@@ -25,120 +25,153 @@
   </p>
 </div>
 
-<body class=" bg-gray-400">
+<body class=" bg-gray-50">
   <!-- Dekstop Menu -->
-<nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
+  <nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
 
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
+      </div>
+
+      <!-- Center Menu -->
+      <ul class="flex items-center space-x-8 text-sm font-medium">
+        <li><a href="#" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">About Us</a></li>
+        <li><a href="#" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a></li>
+        <li><a href="#" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Products</a></li>
+        <li><a href="#" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
+        <li><a href="#" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Contact Us</a></li>
+      </ul>
+
+      <!-- Right Button -->
+      <div>
+        <a href="#" class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
 
     <!-- Logo -->
-    <div class="flex items-center">
-      <img src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
-    </div>
+    <img src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
 
-    <!-- Center Menu -->
-    <ul class="flex items-center space-x-8 text-sm font-medium">
-      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons smooth">Home</a></li>
-      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons smooth">About Us</a></li>
-      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons smooth">Services</a></li>
-      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons smooth">Products</a></li>
-      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons smooth">Sustainability</a></li>
-      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons smooth">Contact Us</a></li>
-    </ul>
+    <!-- Hamburger -->
+    <button id="openMenu" class="text-3xl">
+      ☰
+    </button>
 
-    <!-- Right Button -->
-    <div>
-      <a href="#" class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
-        Contact Us
-      </a>
-    </div>
+  </nav>
+  <!-- Overlay -->
+  <div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
 
-  </div>
+  <!-- Side Menu -->
 
-</nav>
+  <div class="relative">
+    <div id="sideMenu"
+      class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
 
-<!-- Mobile Menu -->
-<nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
+      <!-- Close button -->
+      <div class="flex top-4 right-4 justify-end absolute p-4">
+        <button id="closeMenu" class="text-2xl">✕</button>
+      </div>
 
-  <!-- Logo -->
-  <img src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
+      <!-- Links -->
+      <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
 
-  <!-- Hamburger -->
-  <button id="openMenu" class="text-3xl">
-    ☰
-  </button>
-
-</nav>
-<!-- Overlay -->
-<div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
-
-<!-- Side Menu -->
-
-<div class="relative">
-  <div id="sideMenu"
-     class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
-
-  <!-- Close button -->
-  <div class="flex top-4 right-4 justify-end absolute p-4">
-    <button id="closeMenu" class="text-2xl">✕</button>
-  </div>
-
-  <!-- Links -->
-  <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">Sustainability</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-
-  <!-- Button -->
-  <div class="px-6 mt-8">
-    <a href="#" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
-      Contact Us
-    </a>
-  </div>
-
-</div>
-</div>
-
-<!-- Mobile Menu End -->
-
-
-<!-- Hero Section -->
-<div class="static z-[-1]">
-  <div class="relative h-screen">
-    <img src="./public/images/homeher.webp" class="w-full h-full object-cover" alt="Hero Image">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div class="text-center text-white px-4">
-        <h1 class="text-4xl tracking-wide  mons  ">Welcome to <span class="playwrite tcolor font-extrabold text-7xl">TajPak</span></h1>
-        <p class="text-xl tracking-wide md:text-2xl mt-4 mb-10 poppins">Crafting the Future of <br> Textiles with Timeless Expertise</p>
-        <a href="#" class="bg-[#2e3092] mons  text-white px-6 py-3 rounded-full text-sm hover:bg-blue-700 transition">
-          Learn More
+      <!-- Button -->
+      <div class="px-6 mt-8">
+        <a href="#" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
+          Contact Us
         </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu End -->
+
+
+  <!-- Hero Section -->
+  <div class="static z-[-1]">
+    <div class="relative h-screen">
+      <img src="./public/images/homeher.webp" class="w-full h-full object-cover" alt="Hero Image">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="text-center text-white px-4">
+          <h1 class="text-4xl tracking-wide  mons  ">Welcome to <span
+              class="playwrite tcolor font-extrabold text-7xl">TajPak</span></h1>
+          <p class="text-xl tracking-wide md:text-2xl mt-4 mb-10 poppins">Crafting the Future of <br> Textiles with
+            Timeless Expertise</p>
+          <a href="#" class="bg-[#2e3092] mons  text-white px-6 py-3 rounded-full text-sm hover:bg-blue-700 transition">
+            Learn More
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Our story -->
+  <div>
+    <div class="container px-4 mx-auto py-10">
 
+      <!-- Heading -->
+      <div class="mx-auto w-full flex justify-center items-center gap-4">
+        <i class="fa-solid text-sm fa-circle tcolor"></i>
+        <span class="mons text-gray-700">OUR STORY</span>
+      </div>
 
-<!-- Hero Section -->
-<div class="static z-[-1]">
-  <div class="relative h-screen">
-    <img src="./public/images/homeher.webp" class="w-full h-full object-cover" alt="Hero Image">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div class="text-center text-white px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 playwrite">Welcome to TajPak</h1>
-        <p class="text-lg md:text-2xl mb-8 cal">Your Trusted Packaging Partner</p>
-        <a href="#" class="bg-[#2e3092] mons text-white px-6 py-3 rounded-full text-sm hover:bg-blue-700 transition">
-          Learn More
-        </a>
+      <!-- Text -->
+      <div class="w-full flex justify-center">
+        <div class="w-full mt-6 max-w-[700px]">
+          <h1 class="cor text-center md:text-justify text-xl md:text-3xl leading-relaxed">
+            Founded in Pakistan, TajPak is a trusted textile company delivering quality fabrics and apparel solutions
+            worldwide. With a focus on innovation, craftsmanship, and reliability, we provide end-to-end textile
+            sourcing and manufacturing services built on long-term partnerships and excellence.
+          </h1>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="w-full mt-16 md:mt-20 gap-8 md:gap-10 grid grid-cols-1 md:grid-cols-2">
+
+        <!-- Images -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center md:items-start">
+          <img class="w-full sm:max-w-[250px] md:max-w-[300px]" src="./public/images/h1.webp" alt="">
+          <img class="w-full sm:max-w-[250px] md:max-w-[300px]" src="./public/images/h2.webp" alt="">
+        </div>
+
+        <!-- Text + Button -->
+        <div class="flex flex-col justify-center md:justify-end items-center md:items-start text-center md:text-left">
+
+          <button
+            class="border raleway smooth border-[#2e3092] text-[#2e3092] px-5 py-3 w-fit rounded-full transition hover:bg-[#2e3092] hover:text-white">
+            Read More
+          </button>
+
+          <div class="cor mt-6 text-xl md:text-2xl">
+            Your trusted partner for innovative, <br class="hidden md:block"> reliable, and quality textiles
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
-</div>
+
 </body>
 
 <script defer src="./src/js/index.js"></script>
