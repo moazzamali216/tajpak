@@ -21,8 +21,8 @@
     if (window.scrollY > 50) {
 
       // Navbar background
-      navbar.classList.add("bg-gray-200", "shadow-md","py-1");
       navbar.classList.remove("bg-transparent","py-4");
+      navbar.classList.add("bg-white", "shadow-md","py-1");
 
       // Links color
       navLinks.forEach(link => {
