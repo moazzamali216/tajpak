@@ -16,20 +16,127 @@
 
 </head>
 
-<div id="preloader" class="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
-  
-  <img src="./public/images/logo-white.png" class="w-28 animate-pulse" alt="Logo">
 
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+  <img src="./public/images/logo-white.png" class="w-28 animate-pulse" alt="Logo">
   <p class="mt-4 text-sm tracking-widest text-gray-500 animate-pulse">
     Loading...
   </p>
-
 </div>
 
-  <body class="">
+<body class=" bg-gray-400">
+  <!-- Dekstop Menu -->
+<nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
 
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-  </body>
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
+    </div>
+
+    <!-- Center Menu -->
+    <ul class="flex items-center space-x-8 text-sm font-medium">
+      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons transition">Home</a></li>
+      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons transition">About Us</a></li>
+      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons transition">Services</a></li>
+      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons transition">Products</a></li>
+      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons transition">Sustainability</a></li>
+      <li><a href="#" class="hover:text-blue-600 text-gray-100 mons transition">Contact Us</a></li>
+    </ul>
+
+    <!-- Right Button -->
+    <div>
+      <a href="#" class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
+
+  <!-- Logo -->
+  <img src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
+
+  <!-- Hamburger -->
+  <button id="openMenu" class="text-3xl">
+    ☰
+  </button>
+
+</nav>
+<!-- Overlay -->
+<div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
+
+<!-- Side Menu -->
+
+<div class="relative">
+  <div id="sideMenu"
+     class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
+
+  <!-- Close button -->
+  <div class="flex top-4 right-4 justify-end absolute p-4">
+    <button id="closeMenu" class="text-2xl">✕</button>
+  </div>
+
+  <!-- Links -->
+  <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Sustainability</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+  <!-- Button -->
+  <div class="px-6 mt-8">
+    <a href="#" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
+      Contact Us
+    </a>
+  </div>
+
+</div>
+</div>
+
+<!-- Mobile Menu End -->
+
+<!-- Hero Section -->
+<div class="static z-[-1]">
+  <div class="relative h-screen">
+    <img src="./public/images/homeher.webp" class="w-full h-full object-cover" alt="Hero Image">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 playwrite">Welcome to TajPak</h1>
+        <p class="text-lg md:text-2xl mb-8 cal">Your Trusted Packaging Partner</p>
+        <a href="#" class="bg-[#2e3092] mons text-white px-6 py-3 rounded-full text-sm hover:bg-blue-700 transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero Section -->
+<div class="static z-[-1]">
+  <div class="relative h-screen">
+    <img src="./public/images/homeher.webp" class="w-full h-full object-cover" alt="Hero Image">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 playwrite">Welcome to TajPak</h1>
+        <p class="text-lg md:text-2xl mb-8 cal">Your Trusted Packaging Partner</p>
+        <a href="#" class="bg-[#2e3092] mons text-white px-6 py-3 rounded-full text-sm hover:bg-blue-700 transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 
 <script defer src="./src/js/index.js"></script>
+
 </html>
