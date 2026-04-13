@@ -34,7 +34,7 @@
 
       // Reset navbar
       navbar.classList.add("bg-transparent","py-4");
-      navbar.classList.remove("bg-gray-200", "shadow-md","py-1");
+      navbar.classList.remove("bg-white", "shadow-md","py-1");
 
       // Reset links
       navLinks.forEach(link => {
@@ -63,3 +63,31 @@
   openMenu.addEventListener("click", openNav);
   closeMenu.addEventListener("click", closeNav);
   overlay.addEventListener("click", closeNav);
+
+
+
+
+  const buttons = document.querySelectorAll('.faq-btn');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+
+      document.querySelectorAll('.faq-content').forEach(el => {
+        if (el !== content) el.style.maxHeight = null;
+      });
+
+      document.querySelectorAll('.faq-icon').forEach(i => {
+        if (i !== icon) i.classList.remove('rotate-45');
+      });
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.classList.remove('rotate-45');
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.add('rotate-45');
+      }
+    });
+  });
