@@ -91,3 +91,22 @@
       }
     });
   });
+
+
+      const trustedBrandsSwiper = new Swiper(".trustedBrandsSwiper", {
+      loop: true,
+      spaceBetween: 40,
+      slidesPerView: 2,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 5,
+        }
+      }
+    });
