@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TajPak - Sustainability</title>
+    <link rel="Icon" href="./public/images/logo-transparent copy.png" type="image/x-icon">
+
+    <!-- External CSsS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" src="./public/images/logo-white.png" class="w-28 animate-up-pulse" alt="Logo">
+    <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
+        Loading...
+    </p>
+</div>
+
+<body class=" bg-gray-50">
+    <!-- Dekstop Menu -->
+    <nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
+
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img loading="lazy" src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
+            </div>
+
+            <!-- Center Menu -->
+            <ul class="flex items-center space-x-8 text-sm font-medium">
+                <li><a href="./index.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Home</a></li>
+                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">About
+                        Us</a>
+                </li>
+                <li><a href="./services.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a>
+                </li>
+                <li><a href="./products.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Products</a>
+                </li>
+                <li><a href="./sustainability.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
+                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">E-Broucher</a></li>
+            </ul>
+
+            <!-- Right Button -->
+            <div>
+                <a href="#"
+                    class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <img loading="lazy" src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
+
+        <!-- Hamburger -->
+        <button id="openMenu" class="text-3xl">
+            ☰
+        </button>
+
+    </nav>
+    <!-- Overlay -->
+    <div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
+
+    <!-- Side Menu -->
+
+    <div class="relative">
+        <div id="sideMenu"
+            class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
+
+            <!-- Close button -->
+            <div class="flex top-4 right-4 justify-end absolute p-4">
+                <button id="closeMenu" class="text-2xl">✕</button>
+            </div>
+
+            <!-- Links -->
+            <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <!-- Button -->
+            <div class="px-6 mt-8">
+                <a href="#" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Menu End -->
+
+    <!-- About Us Hero (Centered + Background Image + Black Overlay) -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="./public/images/sus1.webp" class="absolute inset-0 w-full h-full object-cover" alt="About TajPak">
+
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/10"></div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+
+            <h1 class="text-5xl md:text-7xl font-['Playfair_Display'] text-white">
+                Sustainability <br>
+            </h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- Sustainability Section -->
+    <section class="relative py-24 bg-[#f7f6f4] overflow-hidden">
+
+        <!-- Background Glow -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                    SUSTAINABILITY
+                </p>
+
+                <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    Sustainability at <span class="playwrite tcolor text-6xl">TajPak</span>
+                </h2>
+            </div>
+
+            <!-- Introduction -->
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway']">
+                    At TajPak, sustainability is not just a practice — it is a responsibility embedded in our sourcing
+                    and supply chain operations. We actively work with compliant manufacturers and global buyers to
+                    promote environmentally conscious, ethical, and efficient textile production from Faisalabad to
+                    international markets.
+                </p>
+            </div>
+
+            <!-- Bullet Points -->
+            <div class="max-w-3xl mx-auto space-y-8 text-[#6e6a5e] font-['Raleway']">
+
+                <!-- Point 1 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-[#2d2a26] mb-2">
+                        • Responsible Manufacturing
+                    </h3>
+                    <p>
+                        We collaborate only with verified and compliant factories that follow ethical labor practices
+                        and internationally accepted production standards.
+                    </p>
+                </div>
+
+                <!-- Point 2 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-[#2d2a26] mb-2">
+                        • Eco-Friendly Material Selection
+                    </h3>
+                    <p>
+                        We encourage the use of organic cotton, recycled fibers, and low-impact dyes to reduce
+                        environmental impact across the supply chain.
+                    </p>
+                </div>
+
+                <!-- Point 3 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-[#2d2a26] mb-2">
+                        • Resource Efficiency
+                    </h3>
+                    <p>
+                        Our sourcing approach promotes efficient use of water, energy, and raw materials to minimize
+                        waste in textile production processes.
+                    </p>
+                </div>
+
+                <!-- Point 4 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-[#2d2a26] mb-2">
+                        • Waste Reduction Practices
+                    </h3>
+                    <p>
+                        We support optimized production planning and recycling initiatives to significantly reduce
+                        textile waste at manufacturing level.
+                    </p>
+                </div>
+
+                <!-- Point 5 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-[#2d2a26] mb-2">
+                        • Ethical & Transparent Sourcing
+                    </h3>
+                    <p>
+                        We maintain full transparency in vendor selection, pricing, and production monitoring to ensure
+                        responsible global sourcing.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#f7f6f4] relative overflow-hidden">
+
+        <!-- Background Glow -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-[1530px] container mx-auto px-4 relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+
+                    <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                        SUSTAINABILITY
+                    </p>
+
+                    <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight mb-6">
+                        Building a <span class="playwrite tcolor text-6xl">Greener Future</span>
+                    </h2>
+
+                    <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway'] mb-8">
+                        At TajPak, sustainability is integrated into every stage of our sourcing and supply chain
+                        operations.
+                        From responsible manufacturing to eco-conscious material selection, we actively work to reduce
+                        environmental impact
+                        while maintaining global quality standards.
+                    </p>
+
+                    <!-- Key Points -->
+                    <div class="space-y-5 text-[#6e6a5e] font-['Raleway']">
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#2d2a26] mb-1">Responsible Manufacturing</h3>
+                            <p>We partner only with compliant and ethical textile manufacturers across Pakistan.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#2d2a26] mb-1">Eco-Friendly Materials</h3>
+                            <p>We promote sustainable fibers and low-impact production techniques.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-[#2d2a26] mb-1">Waste & Resource Efficiency</h3>
+                            <p>We support reduced waste generation and efficient use of water and energy.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="max-w-[500px]">
+                        <img src="./public/images/sus2.png" alt="Sustainability TajPak" class="w-full rounded-xl " />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-24 bg-[#f7f6f4] relative overflow-hidden">
+
+        <!-- Background Glow -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-[1530px] w-full container mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                    CERTIFICATIONS
+                </p>
+
+                <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    Global Standards of <span class="playwrite tcolor text-6xl">Trust</span>
+                </h2>
+
+                <p class="mt-6 max-w-2xl mx-auto text-[#6e6a5e] font-['Raleway'] leading-relaxed">
+                    TajPak is committed to international compliance and sustainability standards,
+                    ensuring responsible sourcing and premium quality across every stage of production.
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3  gap-6">
+
+                <!-- GOTS -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-8 text-center">
+                    <i class="fa-solid fa-leaf text-3xl text-[#2e3092] mb-4"></i>
+                    <h3 class="font-semibold text-[#2d2a26] text-lg mb-2">GOTS</h3>
+                    <p class="text-sm text-[#6e6a5e] font-['Raleway']">Global Organic Textile Standard</p>
+                </div>
+                <!-- OEKO-TEX -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-8 text-center">
+                    <i class="fa-solid fa-shield-heart text-3xl text-[#2e3092] mb-4"></i>
+                    <h3 class="font-semibold text-[#2d2a26] text-lg mb-2">OEKO-TEX</h3>
+                    <p class="text-sm text-[#6e6a5e] font-['Raleway']">Certified Safe Textiles</p>
+                </div>
+
+                <!-- GRS -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-8 text-center">
+                    <i class="fa-solid fa-recycle text-3xl text-[#2e3092] mb-4"></i>
+                    <h3 class="font-semibold text-[#2d2a26] text-lg mb-2">GRS</h3>
+                    <p class="text-sm text-[#6e6a5e] font-['Raleway']">Global Recycled Standard</p>
+                </div>
+
+                <!-- RCS -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-8 text-center">
+                    <i class="fa-solid fa-circle-check text-3xl text-[#2e3092] mb-4"></i>
+                    <h3 class="font-semibold text-[#2d2a26] text-lg mb-2">RCS</h3>
+                    <p class="text-sm text-[#6e6a5e] font-['Raleway']">Recycled Claim Standard</p>
+                </div>
+
+                <!-- BLUESIGN -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-8 text-center">
+                    <i class="fa-solid fa-industry text-3xl text-[#2e3092] mb-4"></i>
+                    <h3 class="font-semibold text-[#2d2a26] text-lg mb-2">bluesign</h3>
+                    <p class="text-sm text-[#6e6a5e] font-['Raleway']">Sustainable Textile Production</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="relative py-24 bg-[#f7f6f4] overflow-hidden">
+
+  <!-- Decorative Blobs -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+  <div class="container max-w-[1530px] mx-auto px-4 relative z-10">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+        SUSTAINABILITY FAQ
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+        Responsible Sourcing <br>
+        <span class="playwrite tcolor text-6xl">Made Clear</span>
+      </h2>
+
+      <p class="mt-6 max-w-2xl mx-auto text-[#6e6a5e] font-['Raleway'] leading-relaxed">
+        Learn how TajPak integrates sustainability, ethical manufacturing, and global compliance into every stage of our textile sourcing operations from Faisalabad, Pakistan.
+      </p>
+    </div>
+
+    <!-- Accordion -->
+    <div class="space-y-5">
+
+      <!-- Item 1 -->
+      <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <button class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+          What does sustainability mean at TajPak?
+          <span class="faq-icon transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+          <p class="py-5 text-gray-500 font-['Raleway']">
+            Sustainability at TajPak means responsible sourcing, ethical production, and minimizing environmental impact while maintaining high-quality textile supply chains for global buyers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <button class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+          How do you ensure ethical manufacturing?
+          <span class="faq-icon transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+          <p class="py-5 text-gray-500 font-['Raleway']">
+            We partner only with vetted and compliant manufacturers in Faisalabad and across Pakistan who follow international labor standards and safe working conditions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <button class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+          Do you support eco-friendly materials?
+          <span class="faq-icon transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+          <p class="py-5 text-gray-500 font-['Raleway']">
+            Yes, we promote organic cotton, recycled fibers, and low-impact dyes to reduce environmental footprint across textile production.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <button class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+          How do you reduce environmental impact?
+          <span class="faq-icon transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+          <p class="py-5 text-gray-500 font-['Raleway']">
+            We focus on reducing water usage, optimizing energy consumption, and minimizing waste through efficient sourcing and production monitoring.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <button class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+          Are your suppliers sustainability certified?
+          <span class="faq-icon transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+          <p class="py-5 text-gray-500 font-['Raleway']">
+            Yes, we work with manufacturers certified under global standards such as GOTS, OEKO-TEX, GRS, RCS, and Bluesign.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+        <button class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+          How can global buyers work with TajPak sustainably?
+          <span class="faq-icon transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+          <p class="py-5 text-gray-500 font-['Raleway']">
+            Global buyers can collaborate with TajPak for transparent sourcing, compliant manufacturing partners, and end-to-end sustainable supply chain solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="relative py-24 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef7f1] overflow-hidden">
+
+  <!-- Green Eco Blobs -->
+  <div class="absolute -top-24 -left-24 w-96 h-96 bg-green-200/20 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-24 -right-24 w-[30rem] h-[30rem] bg-green-300/20 rounded-full blur-3xl"></div>
+
+  <!-- Subtle leaf pattern -->
+  <div class="absolute inset-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/leaf.png')]"></div>
+
+  <div class="container max-w-[1530px] mx-auto px-4 relative z-10">
+
+    <!-- CTA Card -->
+    <div class="bg-white/80 backdrop-blur-md border border-green-100 rounded-3xl shadow-lg p-12 md:p-20 text-center relative overflow-hidden">
+
+      <!-- Inner green glow -->
+      <div class="absolute -top-10 -right-10 w-72 h-72 bg-green-200/20 rounded-full blur-3xl"></div>
+
+      <!-- Eco badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 text-green-700 text-sm font-medium mb-6">
+        <i class="fa-solid fa-leaf"></i>
+        Eco-Friendly Textile Sourcing
+      </div>
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+        Let’s Build a <br>
+        <span class="text-green-700 playwrite text-6xl">Sustainable Future</span>
+      </h2>
+
+      <!-- Subtext -->
+      <p class="mt-6 max-w-2xl mx-auto text-[#6e6a5e] font-['Raleway'] leading-relaxed">
+        At TajPak, we believe in responsible sourcing and environmentally conscious textile production.
+        Join us in creating a greener, cleaner, and more ethical global supply chain.
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+
+        <!-- Primary CTA -->
+        <a href="./contact.html"
+          class="bg-green-600 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-green-700 transition shadow-md flex items-center gap-2">
+          <i class="fa-solid fa-leaf"></i>
+          Get Eco Quote
+        </a>
+
+        <!-- Secondary CTA -->
+        <a href="./sustainability.html"
+          class="border border-green-600 text-green-700 px-8 py-4 rounded-full text-sm font-medium hover:bg-green-600 hover:text-white transition flex items-center gap-2">
+          <i class="fa-solid fa-earth-americas"></i>
+          View Sustainability
+        </a>
+
+      </div>
+
+      <!-- Trust line -->
+      <p class="mt-8 text-sm text-gray-500 font-['Raleway']">
+        Sustainable sourcing • Certified partners • Responsible production in Faisalabad, Pakistan
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2430] text-white relative overflow-hidden">
+
+        <!-- Soft glow -->
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-[#2e3092]/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-[#2e3092]/20 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4 py-20 relative z-10">
+
+            <!-- Top Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">About TajPak</h3>
+
+                    <p class="text-white/70 text-sm leading-relaxed font-['Raleway']">
+                        TajPak is a trusted textile sourcing partner connecting global buyers with reliable
+                        manufacturers in Pakistan. We ensure quality, transparency, and smooth execution in every order.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Quick Links</h3>
+
+                    <ul class="space-y-3 text-sm text-white/70 font-['Raleway']">
+                        <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="./services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="./products.html" class="hover:text-white transition">Products</a></li>
+                        <li><a href="./certifications.html" class="hover:text-white transition">Certifications</a></li>
+                        <li><a href="./contact.html" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Products</h3>
+
+                    <ul class="space-y-3 text-sm text-white/70 font-['Raleway']">
+                        <li>Home Textiles</li>
+                        <li>Apparels</li>
+                        <li>Fabric</li>
+                        <li>Bathroom</li>
+                        <li>Garments</li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Contact</h3>
+
+                    <ul class="space-y-4 text-sm text-white/70 font-['Raleway']">
+                        <li>📍 Faisalabad, Pakistan</li>
+                        <li>📞 +92 301 6097666</li>
+                        <li>✉ info@tajpak.com</li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-5 mt-6 text-lg">
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-white/10 my-12"></div>
+
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row items-center justify-between text-sm text-white/60 font-['Raleway']">
+
+                <p>© 2026 TajPak. All rights reserved.</p>
+
+                <div class="mt-4 md:mt-0 flex gap-6">
+                    <p>Designed with precision for global textile sourcing</p>
+                    <a href="./terms.html" class="hover:text-white transition">
+                        Terms & Conditions
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+</body>
+
+
+</html>
