@@ -110,3 +110,20 @@
         }
       }
     });
+
+
+       const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 40,
+        speed: 2500, // smooth slow movement
+        autoplay: {
+            delay: 0, // no pause
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            320: { slidesPerView: 2 },
+            640: { slidesPerView: 3 },
+            1024: { slidesPerView: 5 }
+        }
+    });
