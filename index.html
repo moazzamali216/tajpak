@@ -20,8 +20,8 @@
 
 <!-- Preloader -->
 <div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
-  <img loading="lazy" src="./public/images/logo-white.png" class="w-28 animate-pulse" alt="Logo">
-  <p class="mt-4 text-sm tracking-widest text-gray-500 animate-pulse">
+  <img loading="lazy" src="./public/images/logo-white.png" class="w-28 animate-up-pulse" alt="Logo">
+  <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
     Loading...
   </p>
 </div>
@@ -113,14 +113,14 @@
 
 
   <!-- Hero Section -->
-  <div class="static z-[-1]">
+  <div class="static z-[-1] hero-sec">
     <div class="relative h-screen">
       <img loading="lazy" src="./public/images/homeher.webp" class="w-full h-full object-cover" alt="Hero Image">
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="absolute inset-0 bg-black bg-opacity-50  flex items-center justify-center">
         <div class="text-center text-white px-4">
-          <h1 class="text-4xl tracking-wide  mons  ">Welcome to <span
-              class="playwrite tcolor font-extrabold text-7xl">TajPak</span></h1>
-          <p class="text-xl tracking-wide md:text-2xl mt-4 mb-10 poppins">Crafting the Future of <br> Textiles with
+          <h1 class="text-4xl tracking-wide animate-up   mons  " >Welcome to <span
+              class="playwrite tcolor font-extrabold animate-up  text-7xl" >TajPak</span></h1>
+          <p class="text-xl tracking-wide md:text-2xl img2 animate-up mt-4 mb-10 poppins" data-delay="0.5">Crafting the Future of <br> Textiles with
             Timeless Expertise</p>
           <a href="#" class="bg-[#2e3092] mons  text-white px-6 py-3 rounded-full text-sm hover:bg-blue-700 transition">
             Learn More
@@ -131,18 +131,18 @@
   </div>
 
   <!-- Our story -->
-  <div class="bg-[#c8c8ff1a]">
+  <div class="bg-[#c8c8ff1a] ourstory-sec">
     <div class="container max-w-[1530px] px-4 mx-auto py-10">
 
       <!-- Heading -->
       <div class="mx-auto w-full flex justify-center items-center gap-4">
-        <i class="fa-solid text-sm fa-circle tcolor"></i>
-        <span class="mons text-gray-700">OUR STORY</span>
+        <i class="fa-solid animate-right text-sm fa-circle tcolor"></i>
+        <span class="mons text-gray-700 animate-up" data-x="50" data-y="0">OUR STORY</span>
       </div>
 
       <!-- Main Title -->
       <div class="w-full flex justify-center mt-4">
-        <h2 class="text-2xl md:text-4xl font-semibold text-center cor">
+        <h2  data-y="50"class="text-2xl animate-up  md:text-4xl font-semibold text-center cor">
           Global Sourcing Partner in Textiles & Apparel
         </h2>
       </div>
@@ -150,7 +150,7 @@
       <!-- Text -->
       <div class="w-full flex justify-center">
         <div class="w-full mt-6 max-w-[800px]">
-          <p class="cor  md:text-justify text-lg md:text-xl leading-relaxed">
+          <p class="cor  md:text-justify animate-up text-lg md:text-xl leading-relaxed">
             Founded in Faisalabad in 1992, TajPak has grown from a small sourcing firm into a trusted global textile
             partner, delivering complete supply chain solutions to international clients. With decades of experience in
             the textile industry, we connect global buyers with reliable manufacturers while ensuring consistent
@@ -168,19 +168,19 @@
 
         <!-- Images -->
         <div class="grid grid-cols-2 gap-4 justify-center items-center md:items-start">
-          <img loading="lazy" src="./public/images/h1.webp" alt="">
-          <img loading="lazy" src="./public/images/h2.webp" alt="">
+          <img loading="lazy" src="./public/images/h1.webp" alt="" class=" animate-z animate-fadeup">
+          <img loading="lazy" src="./public/images/h2.webp" alt=""  class=" animate-z animate-fadeup" data-delay="0.5">
         </div>
 
         <!-- Text + Button -->
         <div class="flex flex-col justify-center lg:justify-end items-center lg:items-start text-center lg:text-left">
 
           <button
-            class="border raleway smooth border-[#2e3092] text-[#2e3092] px-5 py-3 w-fit rounded-full transition hover:bg-[#2e3092] hover:text-white">
+            class="border animate-up raleway smooth border-[#2e3092] text-[#2e3092] px-5 py-3 w-fit rounded-full transition hover:bg-[#2e3092] hover:text-white">
             Read More
           </button>
 
-          <div class="cor mt-6 text-xl sm:text-2xl">
+          <div class="cor mt-6 animate-up text-xl sm:text-2xl">
             Delivering quality textiles with reliability, innovation, and global expertise
           </div>
 
@@ -193,9 +193,9 @@
   <!-- Grid -->
   <section class="bg-[#f7f6f4] py-20">
     <div class="w-[100px] mx-auto text-center">
-      <img loading="lazy" src="./public/images/logo-white.png" alt="">
+      <img loading="lazy" src="./public/images/logo-white.png" class="animate-z" alt="">
     </div>
-    <h2 class="text-3xl  mt-10 text-center md:text-5xl font-['Playfair_Display'] text-[#2d2a26] mb-14 leading-tight">
+    <h2 class="text-3xl animate-up mt-10 text-center md:text-5xl font-['Playfair_Display'] text-[#2d2a26] mb-14 leading-tight">
       Solutions We Deliver
 
     </h2>
@@ -295,15 +295,15 @@
     <div class="absolute top-0 left-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
 
-    <div class="container max-w-[1530px] mx-auto px-4 relative z-10">
+    <div class="container  max-w-[1530px] mx-auto px-4 relative z-10">
 
       <!-- Heading -->
       <div class="text-center mb-16">
-        <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
+        <p class="tracking-[0.3em] animate-up text-sm text-gray-500 font-['Raleway'] mb-4">
           OUR PROCESS
         </p>
 
-        <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+        <h2 class="text-3xl  animate-up md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
           Our Sourcing <span class="playwrite tcolor text-6xl">Workflow</span>
         </h2>
       </div>
@@ -317,10 +317,10 @@
         <div class="space-y-16">
 
           <!-- Step 1 -->
-          <div class="md:flex md:items-center md:justify-between relative">
+          <div class="md:flex animate-up md:items-center md:justify-between relative">
 
-            <div class="md:w-1/2 md:pr-12 text-right">
-              <h3 class="text-xl font-medium text-[#2d2a26] mb-2 poppins">
+            <div class="md:w-1/2  md:pr-12 text-right">
+              <h3 class="text-xl  animate-up font-medium text-[#2d2a26] mb-2 poppins">
                 Understanding Your Requirements
               </h3>
               <p class="text-gray-500 text-sm leading-relaxed">
@@ -338,17 +338,17 @@
           </div>
 
           <!-- Step 2 -->
-          <div class="md:flex md:items-center md:justify-between relative">
+          <div class="md:flex animate-up md:items-center md:justify-between relative">
 
             <div class="md:w-1/2"></div>
 
             <div
-              class="hidden md:flex w-10 h-10 rounded-full bg-[#2e3092] text-white items-center justify-center font-bold shadow-md relative z-10">
+              class="hidden  md:flex w-10 h-10 rounded-full bg-[#2e3092] text-white items-center justify-center font-bold shadow-md relative z-10">
               02
             </div>
 
-            <div class="md:w-1/2 md:pl-12">
-              <h3 class="text-xl font-medium text-[#2d2a26] mb-2 poppins">
+            <div class="md:w-1/2  md:pl-12">
+              <h3 class="text-xl  animate-up font-medium text-[#2d2a26] mb-2 poppins">
                 Supplier Identification
               </h3>
               <p class="text-gray-500 text-sm leading-relaxed">
@@ -360,10 +360,10 @@
           </div>
 
           <!-- Step 3 -->
-          <div class="md:flex md:items-center md:justify-between relative">
+          <div class="md:flex animate-up md:items-center md:justify-between relative">
 
-            <div class="md:w-1/2 md:pr-12 text-right">
-              <h3 class="text-xl font-medium text-[#2d2a26] mb-2 poppins">
+            <div class="md:w-1/2  md:pr-12 text-right">
+              <h3 class="text-xl  animate-up font-medium text-[#2d2a26] mb-2 poppins">
                 Sampling & Validation
               </h3>
               <p class="text-gray-500 text-sm leading-relaxed">
@@ -380,7 +380,7 @@
           </div>
 
           <!-- Step 4 -->
-          <div class="md:flex md:items-center md:justify-between relative">
+          <div class="md:flex animate-up md:items-center md:justify-between relative">
 
             <div class="md:w-1/2"></div>
 
@@ -390,7 +390,7 @@
             </div>
 
             <div class="md:w-1/2 md:pl-12">
-              <h3 class="text-xl font-medium text-[#2d2a26] mb-2 poppins">
+              <h3 class="text-xl  animate-up font-medium text-[#2d2a26] mb-2 poppins">
                 Production & Quality Control
               </h3>
               <p class="text-gray-500 text-sm leading-relaxed">
@@ -401,10 +401,10 @@
           </div>
 
           <!-- Step 5 -->
-          <div class="md:flex md:items-center md:justify-between relative">
+          <div class="md:flex animate-up md:items-center md:justify-between relative">
 
             <div class="md:w-1/2 md:pr-12 text-right">
-              <h3 class="text-xl font-medium text-[#2d2a26] mb-2 poppins">
+              <h3 class="text-xl  animate-up font-medium text-[#2d2a26] mb-2 poppins">
                 Logistics & Support
               </h3>
               <p class="text-gray-500 text-sm leading-relaxed">
@@ -436,20 +436,20 @@
       <div>
         <!-- Small Label -->
         <div class="flex gap-4 mb-6 items-center">
-          <img loading="lazy" src="./public/images/logo-transparent copy.png" class="w-10 h-8" alt="">
-          <p class="tcolor tracking-[0.4em] text-sm  font-['Raleway']">
+          <img loading="lazy" src="./public/images/logo-transparent copy.png" class="w-10 animate-z h-8" alt="">
+          <p class="tcolor animate-right tracking-[0.4em] text-sm  font-['Raleway']">
             ABOUT US
           </p>
         </div>
 
         <!-- Heading -->
-        <h2 class="text-[42px] md:text-[54px] leading-[1.1] text-[#2d2a26] mb-8 font-['Playfair_Display']">
+        <h2 class="text-[42px] md:text-[54px] animate-right leading-[1.1] text-[#2d2a26] mb-8 font-['Playfair_Display']">
           Eco-Conscious Spun,<br />Responsibly
           <span class="tcolor playwrite font-medium">Woven</span>
         </h2>
 
         <!-- Paragraph -->
-        <p class="text-[#6e6a5e] text-lg leading-relaxed max-w-xl font-['Raleway']">
+        <p class="text-[#6e6a5e] animate-right text-lg leading-relaxed max-w-xl font-['Raleway']">
           Backed by 19 years of proven expertise, we have become a trusted partner to global brands, delivering
           reliability and consistency every time. From fiber to finished fabric, our passion for textiles is reflected
           in every thread we create.</p>
@@ -458,7 +458,7 @@
       <!-- RIGHT IMAGE -->
       <div class="relative">
         <img loading="lazy" src="./public/images/h3.avif" alt="About Image"
-          class="w-full h-[420px] object-cover rounded-sm" />
+          class="w-full h-[420px] animate-left object-cover rounded-sm" />
       </div>
 
     </div>
@@ -470,15 +470,15 @@
 
       <!-- TOP TEXT -->
       <div class="text-center mb-14">
-        <p class="tcolor tracking-[0.3em] text-sm mb-4 font-['Raleway']">
+        <p class="tcolor tracking-[0.3em] animate-up text-sm mb-4 font-['Raleway']">
           PRODUCTS WE SOURCE
         </p>
 
-        <h2 class="text-[34px] md:text-[48px] text-[#2d2a26] mb-6 font-['Playfair_Display']">
+        <h2 class="text-[34px] md:text-[48px] animate-up text-[#2d2a26] mb-6 font-['Playfair_Display']">
           Global Textile Categories We Deliver
         </h2>
 
-        <p class="text-[#6e6a5e] max-w-2xl mx-auto text-lg font-['Raleway'] leading-relaxed">
+        <p class="text-[#6e6a5e] max-w-2xl animate-up mx-auto text-lg font-['Raleway'] leading-relaxed">
           We connect global buyers with trusted manufacturers across Pakistan, supplying high-quality textile products
           with consistent standards, competitive pricing, and reliable sourcing.
         </p>
@@ -488,7 +488,7 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
         <!-- Yarn -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-white rounded-xl animate-up overflow-hidden shadow-sm hover:shadow-md transition">
           <div class="overflow-hidden">
             <img loading="lazy" src="./public/images/ki2.webp"
               class="h-56 w-full object-cover hover:scale-105 transition duration-500" alt="Yarn">
@@ -505,7 +505,7 @@
         </div>
 
         <!-- Fabric -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-white rounded-xl animate-up overflow-hidden shadow-sm hover:shadow-md transition">
           <div class="overflow-hidden">
             <img loading="lazy" src="./public/images/ki1.webp"
               class="h-56 w-full object-cover hover:scale-105 transition duration-500" alt="Fabric">
@@ -522,7 +522,7 @@
         </div>
 
         <!-- Home Textiles -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-white rounded-xl animate-up overflow-hidden shadow-sm hover:shadow-md transition">
           <div class="overflow-hidden">
             <img loading="lazy" src="./public/images/ki3.webp"
               class="h-56 w-full object-cover hover:scale-105 transition duration-500" alt="Home Textiles">
@@ -538,7 +538,7 @@
         </div>
 
         <!-- Garments -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-white rounded-xl animate-up overflow-hidden shadow-sm hover:shadow-md transition">
           <div class="overflow-hidden">
             <img loading="lazy" src="./public/images/ki4.webp"
               class="h-56 w-full object-cover hover:scale-105 transition duration-500" alt="Garments">
@@ -563,16 +563,16 @@
 
       <!-- Small Label -->
       <div class="flex justify-center items-center gap-3 mb-6">
-        <span class="w-2 h-2 bg-[#2e3092] rounded-full"></span>
-        <p class="tracking-[0.3em] text-sm font-['Raleway'] text-gray-500">
+        <span class="w-2 h-2 bg-[#2e3092] animate-right rounded-full"></span>
+        <p class="tracking-[0.3em] animate-up text-sm font-['Raleway'] text-gray-500">
           OUR IMPACT
         </p>
       </div>
 
       <!-- Heading -->
-      <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] mb-14 leading-tight">
+      <h2 class="text-3xl md:text-5xl animate-up font-['Playfair_Display'] text-[#2d2a26] mb-14 leading-tight">
         Delivering Excellence with
-        <span class="playwrite tcolor text-6xl">TajPak</span>
+        <span class="playwrite tcolor   animate-up text-6xl">TajPak</span>
       </h2>
 
       <!-- Stats Grid -->
@@ -688,256 +688,256 @@
 
 
   <!-- Why Global Buyers Choose TajPak -->
-  <section class="bg-[#f7f6f4] py-20">
+ <section class="bg-[#f7f6f4] py-20">
 
-    <div class="container max-w-[1530px] mx-auto px-4">
+  <div class="container max-w-[1530px] mx-auto px-4">
 
-      <!-- Heading -->
-      <div class="text-center mb-14">
-        <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
-          WHY GLOBAL BUYERS CHOOSE US
+    <!-- Heading -->
+    <div class="text-center mb-14 animate-fade animate-up">
+      <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4 animate-fade">
+        WHY GLOBAL BUYERS CHOOSE US
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight animate-z">
+        Why Global Buyers Choose <span class="playwrite tcolor text-6xl">TajPak</span>
+      </h2>
+    </div>
+
+    <!-- Intro Text -->
+    <div class="max-w-4xl mx-auto text-center mb-14 animate-fade animate-up">
+
+      <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway']">
+        Global buyers choose TajPak for dependable international sourcing of textiles and apparel backed by decades of
+        experience and strong local expertise. With deep roots in Pakistan’s textile industry, we operate as a trusted
+        sourcing partner focused on quality, transparency, and seamless execution for international clients.
+      </p>
+
+      <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway'] mt-6 animate-fade">
+        Our strength lies in a compliant vendor network, clear communication, and hands-on production oversight. As a
+        reliable textile sourcing partner, we help global brands reduce risk, optimize cost, and build long-term
+        supply chain relationships.
+      </p>
+
+    </div>
+
+    <!-- Key Points -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition animate-up animate-fade">
+        <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
+          30+ Years of Expertise
+        </h3>
+        <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
+          Decades of experience in textile sourcing ensure deep industry knowledge and reliable execution across global markets.
         </p>
-
-        <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
-          Why Global Buyers Choose <span class="playwrite tcolor text-6xl">TajPak</span>
-        </h2>
       </div>
 
-      <!-- Intro Text -->
-      <div class="max-w-4xl mx-auto text-center mb-14">
-        <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway']">
-          Global buyers choose TajPak for dependable international sourcing of textiles and apparel backed by decades of
-          experience and strong local expertise. With deep roots in Pakistan’s textile industry, we operate as a trusted
-          sourcing partner focused on quality, transparency, and seamless execution for international clients.
-        </p>
-
-        <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway'] mt-6">
-          Our strength lies in a compliant vendor network, clear communication, and hands-on production oversight. As a
-          reliable textile sourcing partner, we help global brands reduce risk, optimize cost, and build long-term
-          supply chain relationships.
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition animate-up animate-fade" data-delay="0.1">
+        <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
+          Vetted Manufacturer Network
+        </h3>
+        <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
+          We work only with compliant and verified textile manufacturers to ensure consistent quality and reliability.
         </p>
       </div>
 
-      <!-- Key Points -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition animate-up animate-fade" data-delay="0.2">
+        <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
+          Transparent Communication
+        </h3>
+        <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
+          Clear pricing, honest updates, and smooth coordination at every stage of sourcing and production.
+        </p>
+      </div>
 
-        <!-- Card 1 -->
-        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
-            30+ Years of Expertise
-          </h3>
-          <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
-            Decades of experience in textile sourcing ensure deep industry knowledge and reliable execution across
-            global markets.
-          </p>
-        </div>
+      <!-- Card 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition animate-up animate-fade" data-delay="0.15">
+        <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
+          On-Ground Quality Control
+        </h3>
+        <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
+          Continuous inspection and monitoring during production to ensure global quality standards are met.
+        </p>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
-            Vetted Manufacturer Network
-          </h3>
-          <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
-            We work only with compliant and verified textile manufacturers to ensure consistent quality and reliability.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
-            Transparent Communication
-          </h3>
-          <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
-            Clear pricing, honest updates, and smooth coordination at every stage of sourcing and production.
-          </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
-            On-Ground Quality Control
-          </h3>
-          <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
-            Continuous inspection and monitoring during production to ensure global quality standards are met.
-          </p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
-            Scalable Solutions
-          </h3>
-          <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
-            Flexible sourcing solutions designed for both growing startups and established global brands.
-          </p>
-        </div>
-
+      <!-- Card 5 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition animate-up animate-fade" data-delay="0.25">
+        <h3 class="text-xl font-medium text-[#2d2a26] mb-3 font-['Playfair_Display']">
+          Scalable Solutions
+        </h3>
+        <p class="text-[#6e6a5e] text-sm leading-relaxed font-['Raleway']">
+          Flexible sourcing solutions designed for both growing startups and established global brands.
+        </p>
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
 
-  <section class="font-[Raleway] bg-[#f6f4ef]">
-    <div class="container max-w-[1530px] mx-auto px-4">
+ <section class="font-[Raleway] bg-[#f6f4ef]">
+  <div class="container max-w-[1530px] mx-auto px-4">
 
-      <!-- SECTION TITLE -->
-      <div class="text-center py-12">
-        <h2 class="tclass text-3xl lg:text-4xl font-medium text-gray-800">
-          How <span class="playwrite tcolor text-6xl"> TajPak </span> Works
-        </h2>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-0 items-start">
-
-        <!-- LEFT IMAGE -->
-        <div class="relative h-[400px] lg:h-auto">
-          <img loading="lazy" src="./public/images/h6.jpg" alt="Home Textile Production"
-            class="w-full h-full object-cover" />
-
-          <!-- Overlay shape -->
-          <div class="absolute bottom-0 left-0 flex gap-4 p-6">
-            <div class="w-24 h-24 bg-white clip-left"></div>
-            <div class="w-24 h-24 bg-white clip-right"></div>
-          </div>
-        </div>
-
-        <!-- RIGHT CONTENT (STICKY) -->
-        <div class=" py-4 lg:pl-16 relative lg:sticky lg:top-24 h-fit">
-
-          <!-- Intro -->
-          <p class="text-gray-500 max-w-md mb-12 leading-relaxed">
-            We ensure every stage of our textile production is carefully managed — from concept to finished fabric —
-            delivering quality, consistency, and comfort in every thread.
-          </p>
-
-          <!-- Timeline -->
-          <div class="relative border-l border-gray-300 pl-8 space-y-12">
-
-            <!-- Step 1 -->
-            <div class="relative">
-              <span class="absolute -left-[38px]  top-1 w-3 h-3 bg-gray-400 rounded-full"></span>
-              <p class="text-xs tracking-widest text-gray-400 mb-2">STEP 01</p>
-              <h3 class="text-2xl font-medium mb-3">Fiber Selection & Sourcing</h3>
-              <p class="text-gray-500 leading-relaxed">
-                We carefully select high-quality natural and blended fibers to ensure durability, softness, and
-                performance.
-              </p>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="relative">
-              <span class="absolute -left-[38px] top-1 w-3 h-3 bg-gray-400 rounded-full"></span>
-              <p class="text-xs tracking-widest text-gray-400 mb-2">STEP 02</p>
-              <h3 class="text-2xl font-medium mb-3">Weaving & Fabric Development</h3>
-              <p class="text-gray-500 leading-relaxed">
-                Advanced weaving techniques are used to create premium fabrics with refined textures and consistent
-                quality.
-              </p>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="relative">
-              <span class="absolute -left-[38px]  top-1 w-3 h-3 bg-[#6b6b4e] rounded-full"></span>
-              <p class="text-xs tracking-widest text-gray-400 mb-2">STEP 03</p>
-              <h3 class="text-2xl font-medium mb-3">Finishing & Quality Assurance</h3>
-              <p class="text-gray-500 leading-relaxed">
-                Each fabric undergoes finishing treatments and strict quality checks to ensure a flawless final textile
-                product.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
+    <!-- SECTION TITLE -->
+    <div class="text-center py-12 animate-fade animate-up">
+      <h2 class="tclass text-3xl lg:text-4xl font-medium text-gray-800">
+        How <span class="playwrite tcolor text-6xl animate-z"> TajPak </span> Works
+      </h2>
     </div>
-  </section>
 
-  <section class="font-[Raleway] bg-[#f6f4ef] py-16 lg:py-24">
-    <div class="container max-w-[1530px] mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-0 items-start">
 
-      <!-- Heading -->
-      <div class="mb-14 justify-between items-center flex-wrap flex">
-        <h2 class="tclass text-3xl lg:text-5xl font-medium text-gray-900 leading-tight">
-          Why <span class="tcolor playwrite text-7xl">TajPak </span> Textiles Are the <br> Right Choice for You?
-        </h2>
-        <img loading="lazy" class="w-[170px] md:block hidden h-auto" src="./public/images/logo-transparent.png" alt="">
+      <!-- LEFT IMAGE -->
+      <div class="relative h-[400px] lg:h-auto animate-left animate-z">
+        <img loading="lazy" src="./public/images/h6.jpg" alt="Home Textile Production"
+          class="w-full h-full object-cover" />
+
+        <!-- Overlay shape -->
+        <div class="absolute bottom-0 left-0 flex gap-4 p-6">
+          <div class="w-24 h-24 bg-white clip-left animate-zoom-in"></div>
+          <div class="w-24 h-24 bg-white clip-right animate-zoom-in" data-delay="0.2"></div>
+        </div>
       </div>
 
-      <!-- Grid -->
-      <div class="grid lg:grid-cols-3 gap-6">
+      <!-- RIGHT CONTENT -->
+      <div class="py-4 lg:pl-16 relative lg:sticky lg:top-24 h-fit animate-right">
 
-        <!-- Card 1 -->
-        <div class="bg-white p-8 rounded-xl">
-          <div class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-full mb-6">
-            🧵
-          </div>
-          <h3 class="text-xl font-medium text-gray-900 mb-3">
-            Premium Craftsmanship
-          </h3>
-          <p class="text-gray-500 text-sm leading-relaxed">
-            Our textiles are crafted with precision using high-quality fabrics, ensuring durability,
-            comfort, and a refined finish for every space.
-          </p>
-        </div>
+        <!-- Intro -->
+        <p class="text-gray-500 max-w-md mb-12 leading-relaxed animate-fade">
+          We ensure every stage of our textile production is carefully managed — from concept to finished fabric —
+          delivering quality, consistency, and comfort in every thread.
+        </p>
 
-        <!-- Card 2 -->
-        <div class="bg-white p-8 rounded-xl">
-          <div class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-full mb-6">
-            🎨
-          </div>
-          <h3 class="text-xl font-medium text-gray-900 mb-3">
-            Custom Design Options
-          </h3>
-          <p class="text-gray-500 text-sm leading-relaxed">
-            Choose from a wide range of textures, colors, and patterns tailored to match your
-            interior style and personal preferences.
-          </p>
-        </div>
+        <!-- Timeline -->
+        <div class="relative border-l border-gray-300 pl-8 space-y-12">
 
-        <!-- Highlight Card -->
-        <div class="bg-[#2e3092] text-white p-10 rounded-xl flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 flex items-center justify-center border border-white/40 rounded-full mb-6">
-              🏡
-            </div>
-            <h3 class="text-2xl font-medium mb-4">
-              Designed for Modern Living
-            </h3>
-            <p class="text-white/80 text-sm leading-relaxed mb-6">
-              We understand the balance between style and functionality. Our home textile solutions
-              are designed to elevate comfort while maintaining elegance in everyday living.
+          <!-- Step 1 -->
+          <div class="relative animate-up animate-fade">
+            <span class="absolute -left-[38px] top-1 w-3 h-3 bg-gray-400 rounded-full"></span>
+            <p class="text-xs tracking-widest text-gray-400 mb-2">STEP 01</p>
+            <h3 class="text-2xl font-medium mb-3">Fiber Selection & Sourcing</h3>
+            <p class="text-gray-500 leading-relaxed">
+              We carefully select high-quality natural and blended fibers to ensure durability, softness, and performance.
             </p>
-
-
           </div>
 
-          <button
-            class="mt-8 inline-flex items-center gap-2 bg-white text-[#6b6b4e] px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition">
-            Get in Touch →
-          </button>
-        </div>
-
-        <!-- Card 3 (Wide) -->
-        <div class="bg-white p-8 rounded-xl lg:col-span-2">
-          <div class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-full mb-6">
-            📦
+          <!-- Step 2 -->
+          <div class="relative animate-up animate-fade" data-delay="0.2">
+            <span class="absolute -left-[38px] top-1 w-3 h-3 bg-gray-400 rounded-full"></span>
+            <p class="text-xs tracking-widest text-gray-400 mb-2">STEP 02</p>
+            <h3 class="text-2xl font-medium mb-3">Weaving & Fabric Development</h3>
+            <p class="text-gray-500 leading-relaxed">
+              Advanced weaving techniques are used to create premium fabrics with refined textures and consistent quality.
+            </p>
           </div>
-          <h3 class="text-xl font-medium text-gray-900 mb-3">
-            Wide Range of Products
-          </h3>
-          <p class="text-gray-500 text-sm leading-relaxed">
-            From luxurious curtains and cushions to bedding and upholstery fabrics, we offer a
-            complete range of home textile solutions designed to enhance every corner of your home.
-            Our collections combine timeless design with modern trends, ensuring versatility and elegance.
-          </p>
-        </div>
 
+          <!-- Step 3 -->
+          <div class="relative animate-up animate-fade" data-delay="0.4">
+            <span class="absolute -left-[38px] top-1 w-3 h-3 bg-[#6b6b4e] rounded-full"></span>
+            <p class="text-xs tracking-widest text-gray-400 mb-2">STEP 03</p>
+            <h3 class="text-2xl font-medium mb-3">Finishing & Quality Assurance</h3>
+            <p class="text-gray-500 leading-relaxed">
+              Each fabric undergoes finishing treatments and strict quality checks to ensure a flawless final textile product.
+            </p>
+          </div>
+
+        </div>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="font-[Raleway] bg-[#f6f4ef] py-16 lg:py-24">
+  <div class="container max-w-[1530px] mx-auto px-4">
+
+    <!-- Heading -->
+    <div class="mb-14 justify-between items-center flex-wrap flex">
+      <h2 class="tclass text-3xl lg:text-5xl font-medium text-gray-900 leading-tight animate-fade animate-up">
+        Why <span class="tcolor playwrite text-7xl animate-z">TajPak </span> Textiles Are the <br> Right Choice for You?
+      </h2>
+
+      <img loading="lazy"
+        class="w-[170px] md:block hidden h-auto animate-right animate-z"
+        src="./public/images/logo-transparent.png"
+        alt="">
+    </div>
+
+    <!-- Grid -->
+    <div class="grid lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-xl animate-up animate-fade">
+        <div class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-full mb-6 animate-zoom-in">
+          🧵
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-3">
+          Premium Craftsmanship
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Our textiles are crafted with precision using high-quality fabrics, ensuring durability,
+          comfort, and a refined finish for every space.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-xl animate-up animate-fade" data-delay="0.15">
+        <div class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-full mb-6 animate-zoom-in">
+          🎨
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-3">
+          Custom Design Options
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Choose from a wide range of textures, colors, and patterns tailored to match your
+          interior style and personal preferences.
+        </p>
+      </div>
+
+      <!-- Highlight Card -->
+      <div class="bg-[#2e3092] text-white p-10 rounded-xl flex flex-col justify-between animate-up animate-z" data-delay="0.3">
+        <div>
+          <div class="w-12 h-12 flex items-center justify-center border border-white/40 rounded-full mb-6 animate-zoom-in">
+            🏡
+          </div>
+          <h3 class="text-2xl font-medium mb-4">
+            Designed for Modern Living
+          </h3>
+          <p class="text-white/80 text-sm leading-relaxed mb-6">
+            We understand the balance between style and functionality. Our home textile solutions
+            are designed to elevate comfort while maintaining elegance in everyday living.
+          </p>
+        </div>
+
+        <button
+          class="mt-8 inline-flex items-center gap-2 bg-white text-[#6b6b4e] px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition animate-fade">
+          Get in Touch →
+        </button>
+      </div>
+
+      <!-- Card 3 (Wide) -->
+      <div class="bg-white p-8 rounded-xl lg:col-span-2 animate-up animate-fade" data-delay="0.2">
+        <div class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-full mb-6 animate-zoom-in">
+          📦
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-3">
+          Wide Range of Products
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          From luxurious curtains and cushions to bedding and upholstery fabrics, we offer a
+          complete range of home textile solutions designed to enhance every corner of your home.
+          Our collections combine timeless design with modern trends, ensuring versatility and elegance.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -1056,45 +1056,51 @@
 
 
   <!-- CTA Section -->
-  <section class="bg-[#2e3092] text-white py-20">
-    <div class="container max-w-[1530px] mx-auto px-4 text-center">
+ <section class="bg-[#2e3092] text-white py-20">
 
-      <!-- Small Label -->
-      <div class="flex justify-center items-center gap-3 mb-6">
-        <span class="w-2 h-2 bg-white rounded-full"></span>
-        <p class="tracking-[0.3em] text-sm font-['Raleway'] opacity-80">
-          GET STARTED
-        </p>
-      </div>
+  <div class="container max-w-[1530px] mx-auto px-4 text-center">
 
-      <!-- Heading -->
-      <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] leading-tight mb-6">
-        Ready to Elevate Your Space with
-        <span class="playwrite text-6xl">TajPak</span> Textiles?
-      </h2>
+    <!-- Small Label -->
+    <div class="flex justify-center items-center gap-3 mb-6 animate-fade animate-up">
 
-      <!-- Description -->
-      <p class="max-w-2xl mx-auto text-white/80 text-lg leading-relaxed mb-10 font-['Raleway']">
-        Partner with us to experience premium craftsmanship, sustainable practices, and
-        world-class textile solutions tailored to your needs.
+      <span class="w-2 h-2 bg-white rounded-full animate-zoom-in"></span>
+
+      <p class="tracking-[0.3em] text-sm font-['Raleway'] opacity-80 animate-fade">
+        GET STARTED
       </p>
 
-      <!-- Buttons -->
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#"
-          class="bg-white mons text-[#2e3092] px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition">
-          Get in Touch
-        </a>
+    </div>
 
-        <a href="#"
-          class="border mons border-white px-8 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#2e3092] transition">
-          View Products
-        </a>
-      </div>
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] leading-tight mb-6 animate-fade animate-up animate-z">
+      Ready to Elevate Your Space with
+      <span class="playwrite text-6xl">TajPak</span> Textiles?
+    </h2>
+
+    <!-- Description -->
+    <p class="max-w-2xl mx-auto text-white/80 text-lg leading-relaxed mb-10 font-['Raleway'] animate-fade animate-up">
+      Partner with us to experience premium craftsmanship, sustainable practices, and
+      world-class textile solutions tailored to your needs.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade animate-up">
+
+      <a href="#"
+        class="bg-white mons text-[#2e3092] px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition animate-zoom-in">
+        Get in Touch
+      </a>
+
+      <a href="#"
+        class="border mons border-white px-8 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#2e3092] transition animate-zoom-in">
+        View Products
+      </a>
 
     </div>
-  </section>
 
+  </div>
+
+</section>
 <!-- Footer -->
 <footer class="bg-[#1f2430] text-white relative overflow-hidden">
 
@@ -1200,10 +1206,12 @@
 </footer>
 
 
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script defer src="./src/js/index.js"></script>
+  <script defer  src="./src/js/gsap.js"></script>
+  
 </body>
 
 
