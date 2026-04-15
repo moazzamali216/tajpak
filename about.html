@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TajPak - About</title>
+    <link rel="Icon" href="./public/images/logo-transparent copy.png" type="image/x-icon">
+
+    <!-- External CSsS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" src="./public/images/logo-white.png" class="w-28 animate-up-pulse" alt="Logo">
+    <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
+        Loading...
+    </p>
+</div>
+
+<body class=" bg-gray-50">
+    <!-- Dekstop Menu -->
+    <nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
+
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img loading="lazy" src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
+            </div>
+
+            <!-- Center Menu -->
+            <ul class="flex items-center space-x-8 text-sm font-medium">
+                <li><a href="./index.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Home</a></li>
+                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">About
+                        Us</a>
+                </li>
+                <li><a href="./services.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a>
+                </li>
+                <li><a href="./products.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Products</a>
+                </li>
+                <li><a href="./sustainability.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
+                <li><a href="./contact.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Contact
+                        Us</a></li>
+            </ul>
+
+            <!-- Right Button -->
+            <div>
+                <a href="#"
+                    class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <img loading="lazy" src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
+
+        <!-- Hamburger -->
+        <button id="openMenu" class="text-3xl">
+            ☰
+        </button>
+
+    </nav>
+    <!-- Overlay -->
+    <div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
+
+    <!-- Side Menu -->
+
+    <div class="relative">
+        <div id="sideMenu"
+            class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
+
+            <!-- Close button -->
+            <div class="flex top-4 right-4 justify-end absolute p-4">
+                <button id="closeMenu" class="text-2xl">✕</button>
+            </div>
+
+            <!-- Links -->
+            <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <!-- Button -->
+            <div class="px-6 mt-8">
+                <a href="#" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Menu End -->
+
+    <!-- About Us Hero (Centered + Background Image + Black Overlay) -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="./public/images/ab1.webp" class="absolute inset-0 w-full h-full object-cover" alt="About TajPak">
+
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/10"></div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+
+            <h1 class="text-5xl md:text-7xl font-['Playfair_Display'] text-white">
+                About Us
+            </h1>
+
+        </div>
+
+    </section>
+
+    <!-- The Making of TajPak Group -->
+    <section class="bg-[#f7f6f4] py-24 relative overflow-hidden">
+
+        <!-- Background Glow -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                    OUR JOURNEY
+                </p>
+
+                <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    The Making of <span class="playwrite tcolor text-6xl">TajPak Group</span>
+                </h2>
+            </div>
+
+            <!-- Main Story -->
+            <!-- Main Story -->
+            <div class="max-w-4xl mx-auto text-center mb-16">
+
+                <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway']">
+                    TajPak Group began its journey in Faisalabad, Pakistan, in 1992, initially focusing on sourcing
+                    textile raw materials for international clients. Over the years, the company has evolved into a
+                    dynamic, multi-dimensional organization offering complete textile and apparel supply chain
+                    management solutions, serving global buyers with reliability and consistency.
+                </p>
+
+                <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway'] mt-6">
+                    In 1997, TajPak became one of the early companies in the region to achieve ISO certification,
+                    strengthening its commitment to quality management systems and international standards. Since then,
+                    we have continuously improved our operational processes, vendor management systems, and compliance
+                    frameworks to meet the evolving demands of global textile markets.
+                </p>
+
+                <p class="text-[#6e6a5e] text-lg leading-relaxed font-['Raleway'] mt-6">
+                    Today, TajPak Group operates as a trusted sourcing partner, bridging international buyers with
+                    Pakistan’s strongest textile manufacturing network. Our focus remains on transparency, ethical
+                    sourcing, quality assurance, and long-term partnerships that drive sustainable business growth.
+                </p>
+
+            </div>
+
+            <!-- Business Divisions -->
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <!-- TP -->
+                <div class="bg-white p-10 rounded-xl shadow-sm hover:shadow-md transition relative overflow-hidden">
+
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#2e3092]/10 rounded-full blur-2xl"></div>
+
+                    <h3 class="text-2xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                        TajPak (TP)
+                    </h3>
+
+                    <p class="text-[#6e6a5e] leading-relaxed font-['Raleway']">
+                        TajPak is engaged in the global import and export of yarns, greige and finished fabrics, home
+                        textiles, and garments, delivering quality products to markets around the world.
+                    </p>
+
+                </div>
+
+                <!-- TPS -->
+                <div class="bg-white p-10 rounded-xl shadow-sm hover:shadow-md transition relative overflow-hidden">
+
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#2e3092]/10 rounded-full blur-2xl"></div>
+
+                    <h3 class="text-2xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                        TajPak Sourcing (TPS)
+                    </h3>
+
+                    <p class="text-[#6e6a5e] leading-relaxed font-['Raleway']">
+                        TajPak Sourcing specializes in the local procurement and distribution of textile products,
+                        including finished goods, semi-finished materials, and other related textile resources.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Why Choose TajPak (Standalone Section) -->
+    <section class="bg-[#f7f6f4] py-28 relative overflow-hidden">
+
+        <!-- Background Glow -->
+        <div class="absolute -top-28 left-0 w-[34rem] h-[34rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-[36rem] h-[36rem] bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- HEADER -->
+            <div class="text-center mb-20">
+                <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                    WHY CHOOSE TAJPAK
+                </p>
+
+                <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    Built on Trust, Powered by <span class="playwrite tcolor text-6xl">35+ Years</span>
+                </h2>
+
+                <p class="mt-6 max-w-2xl mx-auto text-[#6e6a5e] font-['Raleway'] leading-relaxed">
+                    TajPak has been at the forefront of the textile industry, delivering consistent quality, responsible
+                    sourcing, and global-scale textile solutions across multiple industries worldwide.
+                </p>
+            </div>
+
+            <!-- CONTENT GRID -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- LEFT: IMAGE BLOCK -->
+                <div class="relative">
+
+                    <img src="./public/images/ab2.webp" class="w-full h-[520px] object-cover rounded-2xl shadow-lg"
+                        alt="TajPak Industry">
+
+                    <!-- Overlay Badge -->
+                    <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-xl shadow-sm">
+                        <p class="text-sm font-medium text-[#2d2a26]">Global Textile Excellence</p>
+                        <p class="text-xs text-[#6e6a5e] tracking-wide">Pakistan • International Markets</p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: FEATURES -->
+                <div class="space-y-8">
+
+                    <!-- Feature -->
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-industry text-[#2e3092] text-xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-medium text-[#2d2a26] mons">Responsible Manufacturing</h3>
+                            <p class="text-sm text-[#6e6a5e]">Ethical production practices with controlled and compliant
+                                sourcing systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-building text-[#2e3092] text-xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-medium text-[#2d2a26] mons">State-of-the-Art Infrastructure</h3>
+                            <p class="text-sm text-[#6e6a5e]">Modern sourcing systems ensuring speed, accuracy, and
+                                scalability.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-shield-halved text-[#2e3092] text-xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-medium text-[#2d2a26] mons">Uncompromising Quality Control</h3>
+                            <p class="text-sm text-[#6e6a5e]">Strict inspection at every stage to ensure global-grade
+                                quality standards.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-leaf text-[#2e3092] text-xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-medium text-[#2d2a26] mons">Sustainability First</h3>
+                            <p class="text-sm text-[#6e6a5e]">Eco-conscious sourcing aligned with modern environmental
+                                standards.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-users text-[#2e3092] text-xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-medium text-[#2d2a26] mons">Expert Workforce</h3>
+                            <p class="text-sm text-[#6e6a5e]">Highly experienced professionals ensuring smooth
+                                execution.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-globe text-[#2e3092] text-xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-medium text-[#2d2a26] mons">Global Reach</h3>
+                            <p class="text-sm text-[#6e6a5e]">Trusted sourcing partner for clients across international
+                                markets.</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="pt-6">
+                        <a href="./contact.html"
+                            class="inline-block mons bg-[#2e3092] text-white px-8 py-3 rounded-full text-sm hover:bg-blue-700 transition">
+                            Inquiry Now
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Trusted Brands Section -->
+    <section class="bg-[#f7f6f4] py-20 overflow-hidden">
+
+        <div class="container max-w-[1530px] mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                    TRUSTED BY GLOBAL BRANDS
+                </p>
+
+                <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    Brands That Trust <span class="playwrite tcolor text-6xl">TajPak</span>
+                </h2>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper trustedBrandsSwiper">
+
+                <div class="swiper-wrapper items-center">
+
+                    <!-- Slide (Add Logo Here) -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div
+                            class="h-16 w-40 bg-gray-200 rounded-md flex items-center justify-center text-gray-400 text-sm">
+                            Logo
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Certifications CTA Button -->
+    <div class="text-center mt-12">
+        <a href="#certifications"
+            class="inline-flex items-center gap-3 bg-[#2e3092] text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-blue-700 transition shadow-md">
+
+            <i class="fa-solid fa-certificate"></i>
+            View Our Certifications
+
+        </a>
+
+        <p class="text-xs text-[#6e6a5e] mt-3 font-['Raleway']">
+            ISO & compliance standards ensuring global sourcing reliability
+        </p>
+    </div>
+
+    <!-- About Us FAQ (TajPak Professional) -->
+    <section class="relative py-10 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <!-- Decorative Blobs -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4  relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">ABOUT TAJPAK</p>
+                <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    Professional Textile Expertise <br>
+                    <span class="playwrite tcolor text-6xl">Built on Trust</span>
+                </h2>
+            </div>
+
+            <!-- Accordion -->
+            <div class="space-y-5">
+
+                <!-- Item 1 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What is TajPak’s core identity?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            TajPak is a professional textile sourcing and supply chain management company based in
+                            Faisalabad, Pakistan, serving international clients with end-to-end sourcing solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Where is TajPak located?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            TajPak is headquartered in Faisalabad, Pakistan — the textile hub of the country — allowing
+                            strong access to mills, manufacturers, and export facilities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What services does TajPak provide?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            We provide textile sourcing, product development, vendor coordination, quality assurance,
+                            production monitoring, and global logistics support.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Does TajPak work with international buyers?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Yes, TajPak works with global brands and importers across Europe, North America, the Middle
+                            East, and Asia, ensuring reliable sourcing from Pakistan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How does TajPak ensure professional quality standards?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            We follow structured quality control systems including raw material inspection, in-line
+                            production checks, and final pre-shipment evaluation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How can new clients start working with TajPak?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Clients can contact us via our website or email. Our sourcing team will evaluate
+                            requirements and provide tailored solutions for their business needs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="relative py-28 bg-[#2e3092] overflow-hidden">
+
+        <!-- Decorative Glow -->
+        <div class="absolute -top-40 -left-40 w-[32rem] h-[32rem] bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-40 w-[36rem] h-[36rem] bg-white/10 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4 relative z-10 text-center text-white">
+
+            <!-- CTA Label -->
+            <p class="tracking-[0.35em] text-sm opacity-80 font-['Raleway'] mb-4">
+                CALL TO ACTION
+            </p>
+
+            <!-- Main Heading -->
+            <h2 class="text-3xl md:text-5xl font-['Playfair_Display'] leading-tight mb-6">
+                Ready to Scale Your Textile Sourcing with <br>
+                <span class="playwrite text-6xl">TajPak?</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="max-w-3xl mx-auto text-white/80 text-lg leading-relaxed font-['Raleway'] mb-12">
+                Connect with a trusted textile sourcing partner based in Faisalabad, Pakistan.
+                We help global buyers streamline procurement, ensure strict quality control,
+                and deliver reliable supply chain solutions across yarn, fabric, garments, and home textiles.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+
+                <a href="./contact.html"
+                    class="bg-white text-[#2e3092] px-9 py-3 rounded-full text-sm font-semibold hover:bg-gray-100 transition shadow-lg">
+                    Get a Free Consultation
+                </a>
+
+                <a href="./products.html"
+                    class="border border-white px-9 py-3 rounded-full text-sm font-semibold hover:bg-white hover:text-[#2e3092] transition">
+                    Explore Our Products
+                </a>
+
+            </div>
+
+            <!-- Trust Line -->
+            <div class="mt-12 text-white/60 text-sm font-['Raleway'] tracking-wide space-y-1">
+                <p>✔ 30+ Years of Industry Experience</p>
+                <p>✔ Certified Textile Sourcing Company in Pakistan</p>
+                <p>✔ Trusted by Global Buyers Worldwide</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2430] text-white relative overflow-hidden">
+
+        <!-- Soft glow -->
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-[#2e3092]/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-[#2e3092]/20 rounded-full blur-3xl"></div>
+
+        <div class="container max-w-[1530px] mx-auto px-4 py-20 relative z-10">
+
+            <!-- Top Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">About TajPak</h3>
+
+                    <p class="text-white/70 text-sm leading-relaxed font-['Raleway']">
+                        TajPak is a trusted textile sourcing partner connecting global buyers with reliable
+                        manufacturers in Pakistan. We ensure quality, transparency, and smooth execution in every order.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Quick Links</h3>
+
+                    <ul class="space-y-3 text-sm text-white/70 font-['Raleway']">
+                        <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="./services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="./products.html" class="hover:text-white transition">Products</a></li>
+                        <li><a href="./certifications.html" class="hover:text-white transition">Certifications</a></li>
+                        <li><a href="./contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Products</h3>
+
+                    <ul class="space-y-3 text-sm text-white/70 font-['Raleway']">
+                        <li>Home Textiles</li>
+                        <li>Apparels</li>
+                        <li>Fabric</li>
+                        <li>Bathroom</li>
+                        <li>Garments</li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Contact</h3>
+
+                    <ul class="space-y-4 text-sm text-white/70 font-['Raleway']">
+                        <li>📍 Faisalabad, Pakistan</li>
+                        <li>📞 +92 301 6097666</li>
+                        <li>✉ info@tajpak.com</li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-5 mt-6 text-lg">
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-white/10 my-12"></div>
+
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row items-center justify-between text-sm text-white/60 font-['Raleway']">
+
+                <p>© 2026 TajPak. All rights reserved.</p>
+
+                <div class="mt-4 md:mt-0 flex gap-6">
+                    <p>Designed with precision for global textile sourcing</p>
+                    <a href="./terms.html" class="hover:text-white transition">
+                        Terms & Conditions
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+</body>
+
+
+</html>
