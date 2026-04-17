@@ -1155,6 +1155,9 @@ input[type="range"]::-ms-fill-lower {
 .w-\[400px\] {
   width: 400px;
 }
+.w-\[50px\] {
+  width: 50px;
+}
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1814,6 +1817,14 @@ input[type="range"]::-ms-fill-lower {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-\[green\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 128 0 / var(--tw-text-opacity));
+}
+.text-\[\#026602\] {
+  --tw-text-opacity: 1;
+  color: rgb(2 102 2 / var(--tw-text-opacity));
 }
 .opacity-80 {
   opacity: 0.8;
