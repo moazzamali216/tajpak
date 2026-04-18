@@ -18,7 +18,7 @@
   const navLinks = document.querySelectorAll("#navbar ul li a");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 10) {
 
       // Navbar background
       navbar.classList.remove("bg-transparent","py-4");
