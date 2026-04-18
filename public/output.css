@@ -1941,10 +1941,6 @@ input[type="range"]::-ms-fill-lower {
     padding: 5rem;
   }
 
-  .md\:text-justify {
-    text-align: justify;
-  }
-
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
