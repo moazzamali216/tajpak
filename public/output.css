@@ -2202,6 +2202,11 @@ input[type="range"]::-ms-fill-lower {
   .sm\:flex-row {
     flex-direction: row;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
