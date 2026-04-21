@@ -2237,4 +2237,8 @@ input[type="range"]::-ms-fill-lower {
   .xl\:block {
     display: block;
   }
+
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
