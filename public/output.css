@@ -2311,6 +2311,10 @@ input[type="range"]::-ms-fill-lower {
   .xl\:gap-8 {
     gap: 2rem;
   }
+
+  .xl\:gap-4 {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1536px) {
