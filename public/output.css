@@ -1639,6 +1639,9 @@ input[type="range"]::-ms-fill-lower {
 .p-12 {
   padding: 3rem;
 }
+.p-3 {
+  padding: 0.75rem;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -2191,6 +2194,18 @@ input[type="range"]::-ms-fill-lower {
 
   .sm\:p-1 {
     padding: 0.25rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .sm\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
   }
 
   .sm\:text-base {
