@@ -10,9 +10,9 @@
 
     <!-- External CSsS -->
     <link rel="stylesheet" href="./public/output.css">
+
     <link rel="stylesheet" href="./src/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
 </head>
@@ -129,7 +129,7 @@
         <!-- Content -->
         <div class="relative z-10 text-center px-4">
 
-            <h1 class="text-5xl md:text-7xl font-['Playfair_Display'] text-white">
+            <h1 class="text-5xl md:text-5xl font-['Playfair_Display'] text-white">
                 Services <br>
             </h1>
 
@@ -159,11 +159,12 @@
             <div class="flex justify-center mb-10 ">
                 <div class="flex bg-gray-200 p-1 rounded-full">
                     <button id="tab1Btn"
-                        class="tab-btn px-6 py-3 mons rounded-full text-sm font-medium bg-[#2e3092] text-white transition">
+                        class="px-6 py-3 rounded-full mons text-sm font-medium !bg-[#2e3092] !text-white transition">
                         Find New Suppliers
                     </button>
+
                     <button id="tab2Btn"
-                        class="tab-btn px-6 py-3 mons rounded-full text-sm font-medium text-[#2e3092] transition">
+                        class="px-6 py-3 rounded-full  mons text-sm font-medium bg-white text-[#2d2a26] transition">
                         Manage My Suppliers
                     </button>
                 </div>
@@ -408,7 +409,7 @@
                 <div id="tab2" class="tab-content  hidden">
 
                     <!-- 5-Step Management Process -->
-                <div class="grid  xl:grid-cols-5 gap-4">
+                    <div class="grid sm:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
 
                         <!-- 1 -->
                         <div class="text-center">
@@ -676,7 +677,7 @@
                 <!-- RIGHT CONTENT -->
                 <div class="lg:col-span-3 bg-white rounded-2xl p-10 shadow-sm">
 
-                    <div class="svc-tab-content active" id="vendor">...</div>
+                    <div class="svc-tab-content active" id="vendor">..as.</div>
                     <div class="svc-tab-content hidden" id="design">...</div>
                     <div class="svc-tab-content hidden" id="market">...</div>
                     <div class="svc-tab-content hidden" id="production">...</div>
@@ -882,16 +883,6 @@
         </div>
     </section>
 
-<div class="grid w-full gap-4  lg:grid-cols-6">
- <div class="bg-red-600 h-[100px]"></div>
- <div class="bg-red-600 h-[100px]"></div>
- <div class="bg-red-600 h-[100px]"></div>
- <div class="bg-red-600 h-[100px]"></div>
- <div class="bg-red-600 h-[100px]"></div>
-
- <div class="bg-red-600 h-[100px]"></div>
-
-</div>
 
     <!-- Footer -->
     <footer class="bg-[#1f2430] text-white relative overflow-hidden">
@@ -1018,7 +1009,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script defer src="./src/js/index.js"></script>
     <script defer src="./src/js/gsap.js"></script>
     <!-- Tabs Script -->
@@ -1070,38 +1060,44 @@
 
             if (tab1Btn && tab2Btn && tab1 && tab2) {
 
-                tab1Btn.addEventListener("click", () => {
-                    tab1.classList.remove("hidden");
-                    tab2.classList.add("hidden");
+                function activateTab(activeBtn, inactiveBtn, showTab, hideTab) {
+                    // content
+                    showTab.classList.remove("hidden");
+                    hideTab.classList.add("hidden");
 
-                    tab1Btn.classList.add("bg-[#2e3092]", "text-white");
-                    tab2Btn.classList.remove("bg-[#2e3092]", "text-white");
+                    // active styles (FORCE)
+                    activeBtn.classList.add("!bg-[#2e3092]", "!text-white");
+
+                    // inactive styles
+                    activeBtn.classList.remove("bg-white", "text-[#2d2a26]");
+
+                    inactiveBtn.classList.remove("!bg-[#2e3092]", "!text-white");
+                    inactiveBtn.classList.add("bg-white", "text-[#2d2a26]");
+                }
+                tab1Btn.addEventListener("click", () => {
+                    activateTab(tab1Btn, tab2Btn, tab1, tab2);
                 });
 
                 tab2Btn.addEventListener("click", () => {
-                    tab2.classList.remove("hidden");
-                    tab1.classList.add("hidden");
-
-                    tab2Btn.classList.add("bg-[#2e3092]", "text-white");
-                    tab1Btn.classList.remove("bg-[#2e3092]", "text-white");
+                    activateTab(tab2Btn, tab1Btn, tab2, tab1);
                 });
             }
-
             /* =========================
-               TAB GROUP 2 (Services Tabs)
+            TAB GROUP 2 (Services Tabs)
             ========================= */
 
             setupTabs(
                 ".svc-tab-btn",
                 ".svc-tab-content",
                 {
-                    activeBtn: ["bg-[#2e3092]", "text-white"],
-                    inactiveBtn: ["bg-white"]
+                    activeBtn: ["bg-[#2e3092]", "text-[white]"],
+                    inactiveBtn: ["bg-[white]", "text-[#2d2a26]"]
                 }
             );
 
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 
