@@ -157,7 +157,8 @@
 
             <!-- Tabs -->
             <div class="flex justify-center mb-10 ">
-                <div class="flex bg-gray-200 p-1 rounded-full">
+                <div
+                    class="flex gap-1  border border-blue-900 sm:flex-row flex-col bg-gray-200 p-2 sm:p-1 sm:w-fit w-full rounded-2xl sm:rounded-full">
                     <button id="tab1Btn"
                         class="px-6 py-3 rounded-full mons text-sm font-medium !bg-[#2e3092] !text-white transition">
                         Find New Suppliers
@@ -257,8 +258,9 @@
                     </div>
 
                     <!-- Sourcing Channels -->
-                    <div class="overflow-x-auto mb-8">
-                        <table class="w-full text-left border-collapse table-fixed">
+                    <div class="w-full overflow-x-auto lg:overflow-visible">
+
+                        <table class="min-w-[800px] w-full text-left border-collapse">
 
                             <!-- Column Width Control -->
                             <colgroup>
@@ -268,80 +270,84 @@
                                 <col class="w-[25%]">
                             </colgroup>
 
+                            <!-- Header -->
                             <thead>
                                 <tr class="bg-[#2e3092] text-white">
-                                    <th class="px-5 py-3 rounded-tl-2xl mons text-xs font-semibold align-middle">
+                                    <th class="px-5 py-3 rounded-tl-2xl mons text-xs font-semibold">
                                         Sourcing Channel
                                     </th>
-                                    <th class="px-5 py-3 mons text-xs font-semibold align-middle">
+                                    <th class="px-5 py-3 mons text-xs font-semibold">
                                         Description
                                     </th>
-                                    <th class="px-5 py-3 mons text-xs font-semibold align-middle">
+                                    <th class="px-5 py-3 mons text-xs font-semibold">
                                         Timeline
                                     </th>
-                                    <th class="px-5 py-3 rounded-tr-2xl mons text-xs font-semibold align-middle">
+                                    <th class="px-5 py-3 rounded-tr-2xl mons text-xs font-semibold">
                                         Client Benefit
                                     </th>
                                 </tr>
                             </thead>
 
+                            <!-- Body -->
                             <tbody>
 
                                 <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="px-5 py-5 font-medium text-[#2d2a26] text-sm mons align-middle">
+                                    <td class="px-5 py-5 font-medium text-[#2d2a26] text-sm mons">
                                         TajPak Vetted Network
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed">
                                         Pre-audited manufacturers with verified production capacity, quality history,
                                         compliance (OEKO-TEX, BSCI, Sedex), and financial stability — across home
                                         textiles and apparel in Pakistan
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins">
                                         2-4 weeks
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed">
                                         Zero time wasted on unverified suppliers. Immediate access to production-ready
                                         partners.
                                     </td>
                                 </tr>
 
                                 <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="px-5 py-5 font-medium text-[#2d2a26] text-sm mons align-middle">
+                                    <td class="px-5 py-5 font-medium text-[#2d2a26] text-sm mons">
                                         Trade Fair Intelligence
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed">
                                         Early trend and supplier insights from Heimtextil, Première Vision, Texworld,
                                         Magic Las Vegas, and Intertextile — translated into actionable sourcing
                                         recommendations
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins">
                                         1-2 months
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed">
                                         First-mover advantage. Access to emerging suppliers and materials before
                                         competitors.
                                     </td>
                                 </tr>
 
                                 <tr class="hover:bg-gray-50">
-                                    <td class="px-5 py-5 font-medium text-[#2d2a26] text-sm mons align-middle">
+                                    <td class="px-5 py-5 font-medium text-[#2d2a26] text-sm mons">
                                         On-Ground Supplier Audits
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed">
                                         Physical factory visits and capability assessments across Pakistan's textile
                                         hubs (Faisalabad, Lahore, Karachi). Real-time verification of infrastructure,
                                         workforce, quality systems, and compliance
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins">
                                         3-6 weeks
                                     </td>
-                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed align-middle">
+                                    <td class="px-5 py-5 text-[#6e6a5e] text-sm poppins leading-relaxed">
                                         No blind spots. Firsthand validation of supplier capabilities before onboarding.
                                     </td>
                                 </tr>
 
                             </tbody>
+
                         </table>
+
                     </div>
 
                     <!-- Evaluation Criteria Grid -->
