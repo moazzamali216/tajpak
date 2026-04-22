@@ -1542,6 +1542,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-bg-opacity: 1;
   background-color: rgb(5 122 85 / var(--tw-bg-opacity));
 }
+.bg-\[blue\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 255 / var(--tw-bg-opacity));
+}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1574,6 +1578,11 @@ input[type="range"]::-ms-fill-lower {
   --tw-gradient-to: rgb(243 250 247 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-black\/80 {
+  --tw-gradient-from: rgb(0 0 0 / 0.8);
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .via-black\/40 {
   --tw-gradient-to: rgb(0 0 0 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0.4), var(--tw-gradient-to);
@@ -1600,6 +1609,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .to-\[\#eef7f1\] {
   --tw-gradient-to: #eef7f1;
+}
+.to-black\/20 {
+  --tw-gradient-to: rgb(0 0 0 / 0.2);
 }
 .object-contain {
   -o-object-fit: contain;
