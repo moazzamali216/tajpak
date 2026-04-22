@@ -2310,6 +2310,10 @@ input[type="range"]::-ms-fill-lower {
     padding: 0.25rem;
   }
 
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
