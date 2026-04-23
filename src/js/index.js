@@ -15,7 +15,7 @@
   // Navbar scroll effect
 
   const navbar = document.getElementById("navbar");
-  const navLinks = document.querySelectorAll("#navbar ul li a");
+const navLinks = document.querySelectorAll("#navbar > div > ul > li > a, #navbar > div > ul > li > button");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 10) {

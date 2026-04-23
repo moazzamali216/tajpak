@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./public/output.css">
     <link rel="stylesheet" href="./src/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
 </head>
@@ -47,14 +47,63 @@
                 <li><a href="./services.html"
                         class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a>
                 </li>
-                <li><a href="./products.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Products</a>
+                <li class="relative">
+                    <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                        data-dropdown-placement="bottom-start"
+                        class="flex items-center justify-between w-full text-gray-100 mons hover:text-blue-600 hover:underline smooth"
+                        type="button">
+                        Products
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div id="dropdownProducts"
+                        class="z-50 hidden bg-white divide-y divide-gray-100 rounded-xl shadow-lg w-56">
+                        <ul class="py-2 text-sm text-gray-700">
+
+                            <li>
+                                <a href="./hometextiles.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Home Textiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./hospital.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Hospital Textiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./healthcare.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Healthcare Textiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./terrytowels.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Terry Towels
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./apparels.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Apparels
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="./sustainability.html"
                         class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
-                <li><a href=""
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">E-Broucher</a></li>
-                
+                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">E-Broucher</a></li>
+
             </ul>
 
             <!-- Right Button -->
@@ -121,7 +170,8 @@
     <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
 
         <!-- Background Image -->
-        <img loading='lazy' src="./public/images/ab1.webp" class="absolute inset-0 w-full h-full object-cover" alt="About TajPak">
+        <img loading='lazy' src="./public/images/ab1.webp" class="absolute inset-0 w-full h-full object-cover"
+            alt="About TajPak">
 
         <!-- Black Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
@@ -523,24 +573,28 @@
                     </div>
                 </div>
                 <!-- Item 7 -->
-<div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
-    <button
-        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
-        What makes TajPak different from other sourcing companies?
-        <span class="faq-icon transition-transform duration-300">+</span>
-    </button>
-    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
-        <p class="py-5 text-gray-500 font-['Raleway']">
-            Unlike traditional sourcing companies with rigid minimum order quantities (MOQs), TajPak offers flexible
-            solutions tailored to your business stage — from as low as 300 units for market testing to 10,000+ units for
-            full-scale production.
-            <br><br>
-            We also provide shipment consolidation across home textiles and apparel, allowing clients to combine
-            multiple products into a single shipment. This means one order, one freight cost, and a significantly lower
-            landed cost per unit.
-        </p>
-    </div>
-</div>
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What makes TajPak different from other sourcing companies?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Unlike traditional sourcing companies with rigid minimum order quantities (MOQs), TajPak
+                            offers flexible
+                            solutions tailored to your business stage — from as low as 300 units for market testing to
+                            10,000+ units for
+                            full-scale production.
+                            <br><br>
+                            We also provide shipment consolidation across home textiles and apparel, allowing clients to
+                            combine
+                            multiple products into a single shipment. This means one order, one freight cost, and a
+                            significantly lower
+                            landed cost per unit.
+                        </p>
+                    </div>
+                </div>
 
             </div>
 
