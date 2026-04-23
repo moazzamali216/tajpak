@@ -129,4 +129,25 @@ const navLinks = document.querySelectorAll("#navbar > div > ul > li > a, #navbar
     });
 
 
-    
+    document.querySelectorAll('[data-tabs-target]').forEach(tab => {
+  tab.addEventListener('click', () => {
+
+    setTimeout(() => {
+
+      const targetId = tab.getAttribute('data-tabs-target');
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        const offset = 120; // adjust for navbar height
+        const top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+        });
+      }
+
+    }, 120);
+
+  });
+});
