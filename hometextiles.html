@@ -20,7 +20,9 @@
 
 <!-- Preloader -->
 <div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
-    <img loading="lazy" src="./public/images/logo-white.png" class="w-28 animate-up-pulse" alt="Logo">
+    <img      loading="lazy"
+     decoding="async"
+     fetchpriority="low" src="./public/images/logo-white.png" class="w-28 animate-up-pulse" alt="Logo">
     <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
         Loading...
     </p>
@@ -34,7 +36,9 @@
 
             <!-- Logo -->
             <div class="flex items-center">
-                <img loading="lazy" src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
+                <img      loading="lazy"
+     decoding="async"
+     fetchpriority="low" src="./public/images/logo-transparent.png" class="w-28" alt="Logo">
             </div>
 
             <!-- Center Menu -->
@@ -123,7 +127,9 @@
     <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
 
         <!-- Logo -->
-        <img loading="lazy" src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
+        <img      loading="lazy"
+     decoding="async"
+     fetchpriority="low" src="./public/images/logo-transparent.png" class="w-24" alt="Logo">
 
         <!-- Hamburger -->
         <button id="openMenu" class="text-3xl">
@@ -211,27 +217,6 @@
             <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-14" id="linenTabs"
                 data-tabs-toggle="#linenTabContent" role="tablist">
 
-                <!-- CARD -->
-                <li role="presentation">
-                    <div id="bath-tab" data-tabs-target="#bath" role="tab"
-                        class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
-
-                        <div class="h-64 overflow-hidden">
-                            <img src="./public/images/ki1.webp"
-                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
-                        </div>
-
-                        <div class="p-5 text-center">
-                            <h3 class="text-lg font-['Playfair_Display'] text-[#2d2a26]">
-                                Bath Linen
-                            </h3>
-                            <p class="text-sm text-[#6e6a5e] mt-2 mons">
-                                Soft, absorbent hotel-grade towels for luxury bathrooms.
-                            </p>
-                        </div>
-
-                    </div>
-                </li>
 
                 <!-- CARD -->
                 <li role="presentation">
@@ -254,6 +239,30 @@
 
                     </div>
                 </li>
+
+                <!-- CARD -->
+                <li role="presentation">
+                    <div id="bath-tab" data-tabs-target="#bath" role="tab"
+                        class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+
+                        <div class="h-64 overflow-hidden">
+                            <img src="./public/images/ki1.webp"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                        </div>
+
+                        <div class="p-5 text-center">
+                            <h3 class="text-lg font-['Playfair_Display'] text-[#2d2a26]">
+                                Bath Linen
+                            </h3>
+                            <p class="text-sm text-[#6e6a5e] mt-2 mons">
+                                Soft, absorbent hotel-grade towels for luxury bathrooms.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+
+
 
                 <!-- CARD -->
                 <li role="presentation">
@@ -519,9 +528,315 @@
                     </div>
                 </div>
                 <div class="hidden text-center" id="bed">
-                    <h2 class="text-3xl font-['Playfair_Display'] mb-4">Bed Linen</h2>
-                    <p class="text-[#6e6a5e] max-w-2xl mx-auto">
-                        Luxury bedding crafted for hotels and global brands.
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden" id="home-textiles">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                                    HOME TEXTILE DIVISION
+                                </p>
+
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Complete <span class="tcolor">Home Textile</span> Solutions
+                                </h2>
+
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] font-['Raleway'] leading-relaxed">
+                                    From bedding essentials to decorative furnishings, TajPak delivers premium home
+                                    textile solutions
+                                    engineered for comfort, durability, and global retail standards.
+                                </p>
+                            </div>
+
+                            <!-- 1. BEDSHEETS -->
+                            <div class="grid md:grid-cols-2 gap-10  mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[420px]">
+                                    <img src="./public/images/ki1.webp" class="w-full h-[420px] object-fit "
+                                             loading="lazy"
+     decoding="async"
+     fetchpriority="low" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Bedsheets & Flat Sheets
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        We are a specialist exporter of bedsheets and flat sheets, offering premium
+                                        bedding solutions in 100% cotton, linen, and blended poly-cotton or cotton
+                                        fabrics. Our products are available in dyed or printed styles, with customizable
+                                        piping to match any design specification.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Our luxury bed linens are engineered to align with your stitching requirements.
+                                        The fabric features a smooth, soft texture and is supplied in solid white, solid
+                                        color, or printed variations.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        All products are fully customizable. We incorporate blended fabrics as required
+                                        and offer a range of finish categories across the following thread counts: TC
+                                        130, TC 180, TC 200, TC 250, and TC 300.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Available Fabric Constructs:
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• Standard plain weave</li>
+                                        <li>• Brushed finish for thermal comfort</li>
+                                        <li>• High-sheen satin weave</li>
+                                        <li>• Lightweight breathable weave</li>
+                                        <li>• Satin weave with ribbed stripe detailing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 2. FITTED SHEETS -->
+                            <div class="grid md:grid-cols-2 gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Fitted Sheets
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Premium fitted sheets designed for a secure fit and long-lasting mattress
+                                        protection.
+                                        Available in <strong>T-128 to T-300</strong> thread counts using
+                                        <strong>100% Cotton, Poly-Cotton (52:48 / 65:35), and CVC</strong>.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Ideal for both retail and institutional use, with easy-care fabrics that
+                                        maintain
+                                        freshness through repeated washing cycles.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Offered in solid colors with custom options available. White remains the
+                                        preferred
+                                        choice for its clean, versatile appeal.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        Weave Options:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• Percale</li>
+                                        <li>• Sateen</li>
+                                        <li>• Twill</li>
+                                        <li>• Jersey</li>
+                                        <li>• Dobby</li>
+                                        <li>• Patterned</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[420px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/ki2.webp" class="w-full h-full  object-cover"
+                                             loading="lazy"
+     decoding="async"
+     fetchpriority="low" alt="Fitted Sheets" />
+                                </div>
+
+                            </div>
+
+                            <!-- 3. DUVET & QUILT COVERS -->
+                            <div class="grid md:grid-cols-2 gap-10 mb-24">
+
+                                <!-- IMAGE -->
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[420px]">
+                                    <img src="./public/images/ki3.webp" class="w-full h-[420px] object-cover"
+                                             loading="lazy"
+     decoding="async"
+     fetchpriority="low" alt="Duvet & Quilt Covers" />
+                                </div>
+
+                                <!-- TEXT -->
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Duvet & Quilt Covers
+                                    </h3>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Extend the life of duvet inserts and reduce maintenance costs with duvet and
+                                        quilt covers
+                                        designed to protect against body oils, moisture, and spills — keeping duvets
+                                        cleaner for longer.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Available in <strong>T-144 to T-400</strong> thread counts, using
+                                        <strong>100% Cotton, Poly-Cotton (50:50 / 60:40 / 65:35), and CVC</strong>,
+                                        with weave options including Percale, Sateen, Twill, Dobby, and Patterned.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Offered in Twin to King sizes with zipper or corner-tie closures for a secure
+                                        fit.
+                                        Ideal for institutional use with easy-laundry shades like white and beige.
+                                    </p>
+
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Additional Features:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• Zipper or tie closure options</li>
+                                        <li>• Water-resistant finishes</li>
+                                        <li>• Stain-release treatments</li>
+                                        <li>• Durable for high-use environments</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- 4. PILLOW COVERS & PILLOW CASES -->
+                            <div class="grid md:grid-cols-2 gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Pillow Covers & Pillow Cases
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Keep your pillows fresher, cleaner, and longer-lasting with our premium pillow
+                                        protectors and covers. A high-quality pillow protector creates an effective
+                                        barrier against moisture, stains, body oils, and daily wear and tear — helping
+                                        you preserve the comfort and support of your favorite pillow for many years.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        What we offer:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Materials:</strong> 100% Cotton, Polyester, Satin, Flannel, CVC
+                                            and PC blends</li>
+                                        <li>• <strong>Design options:</strong> Printed, Dyed, or White — reversible or
+                                            simple styles</li>
+                                        <li>• <strong>Premium fabrics:</strong> Woven textures, Jacquards, and Dobby
+                                            designs in cotton and poly-cotton</li>
+                                        <li>• <strong>Specialized covers:</strong> Institutional and hospital-grade for
+                                            frequent laundering and high-use environments</li>
+                                        <li>• <strong>Custom throw pillow covers:</strong> Manufactured to your tech
+                                            pack — custom designs, sizes, and closures</li>
+                                        <li>• <strong>Flexible ordering:</strong> Supplied individually or as part of
+                                            complete bed sheet sets</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[420px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/ki4.webp" class="w-full h-full object-cover"
+                                             loading="lazy"
+     decoding="async"
+     fetchpriority="low" alt="Pillow Covers & Pillow Cases" />
+                                </div>
+
+                            </div>
+
+                            <!-- 5. CUSHION COVERS & CUSHION CASES -->
+                            <div class="grid md:grid-cols-2 gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[420px]">
+                                    <img src="./public/images/ki5.webp" class="w-full h-[420px] object-fit"
+                                             loading="lazy"
+     decoding="async"
+     fetchpriority="low" alt="Cushion Covers & Cushion Cases" />
+                                </div>
+
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Cushion Covers & Cushion Cases
+                                    </h3>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                        Protect your cushions from germs, dirt, and buildup with our high-quality
+                                        cushion covers and protectors. Our covers create a reliable barrier that
+                                        prevents dead skin, dust, and bacteria from penetrating deep into the cushion
+                                        core — keeping your cushions cleaner, more hygienic, and longer-lasting.
+                                    </p>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Fully customized to your specifications:
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm mb-4">
+                                        <li>• <strong>Material composition</strong> – 100% Cotton, Polyester, Blended
+                                            Cotton/Poly (52:48 or 65:35), CVC, Microfiber, or other synthetics</li>
+                                        <li>• <strong>Filling and weight</strong> – Your choice based on desired
+                                            firmness and feel</li>
+                                        <li>• <strong>Printing methods</strong> – Digital print, reactive print, or
+                                            pigment print for vibrant, long-lasting designs</li>
+                                        <li>• <strong>Thread count</strong> – Ranging from T-128 to T-300</li>
+                                        <li>• <strong>Sizing</strong> – Any custom dimensions you need</li>
+                                    </ul>
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-2">
+                                        Material benefits at a glance:
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                        <li>• <strong>Natural cotton and cotton-polyester blends</strong> – Easy to
+                                            wash, simple to clean, and hold their shape well over time</li>
+                                        <li>• <strong>Synthetic options like microfiber and polyester</strong> –
+                                            Affordable, durable, and available in a wide range of attractive finishes
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 6. CURTAINS & DRAPERIES -->
+                            <div class="grid md:grid-cols-2 gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Curtains & Draperies
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Stay ahead in interior design with our curtain sets, crafted to meet both
+                                        current and evolving market trends. Whether for residential, hospitality, or
+                                        commercial spaces, our curtains combine style, function, and quality.
+                                    </p>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
+                                        Fabric options for every need:
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm mb-4">
+                                        <li>• <strong>Elegant luxury fabrics</strong> – Silk, Damask, Suede, and
+                                            Chenille for high-end, sophisticated interiors</li>
+                                        <li>• <strong>Practical high-performance fabrics</strong> – PVC for moisture
+                                            resistance, easy cleaning, and durability in high-humidity areas</li>
+                                        <li>• <strong>Custom prints and solids</strong> – Dyed or printed fabrics made
+                                            from scratch based on your exact design requirements</li>
+                                    </ul>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Designed by window type, usage, and interior style — blackout, sheer, thermal,
+                                        or decorative — we tailor accordingly.
+                                    </p>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[420px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/ki6.webp" class="w-full h-full object-cover"
+                                             loading="lazy"
+     decoding="async"
+     fetchpriority="low" alt="Curtains & Draperies" />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                     </p>
                 </div>
 
