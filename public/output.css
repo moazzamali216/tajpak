@@ -1225,6 +1225,9 @@ input[type="range"]::-ms-fill-lower {
 .max-w-\[600px\] {
   max-width: 600px;
 }
+.shrink {
+  flex-shrink: 1;
+}
 .border-collapse {
   border-collapse: collapse;
 }
