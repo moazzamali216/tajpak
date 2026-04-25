@@ -1664,6 +1664,10 @@ input[type="range"]::-ms-fill-lower {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
 .p-4 {
   padding: 1rem;
 }
