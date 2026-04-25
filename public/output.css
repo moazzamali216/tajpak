@@ -841,6 +841,9 @@ input[type="range"]::-ms-fill-lower {
     max-width: 1536px !important;
   }
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
