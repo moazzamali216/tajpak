@@ -976,6 +976,9 @@ input[type="range"]::-ms-fill-lower {
 .-bottom-6 {
   bottom: -1.5rem;
 }
+.right-6 {
+  right: 1.5rem;
+}
 .\!z-\[9999\] {
   z-index: 9999 !important;
 }
