@@ -1204,6 +1204,9 @@ input[type="range"]::-ms-fill-lower {
 .h-10 {
   height: 2.5rem;
 }
+.h-\[540px\] {
+  height: 540px;
+}
 .max-h-0 {
   max-height: 0px;
 }
