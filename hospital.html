@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TajPak - Institutional Textiles</title>
+    <link rel="Icon" href="./public/images/logo-white.png" type="image/x-icon">
+
+    <!-- External CSsS -->
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.0/swiper-bundle.min.js"></script>
+</head>
+
+
+<!-- Preloader -->
+<div id="preloader" class="fixed !z-[9999] inset-0 bg-white flex flex-col items-center justify-center">
+    <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo-white.png"
+        class="w-28 animate-up-pulse" alt="Logo">
+    <p class="mt-4 text-sm tracking-widest text-gray-500 animate-up-pulse">
+        Loading...
+    </p>
+</div>
+
+<body class=" bg-gray-50">
+    <!-- Dekstop Menu -->
+    <nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
+
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo-transparent.png"
+                    class="w-28" alt="Logo">
+            </div>
+
+            <!-- Center Menu -->
+            <ul class="flex items-center space-x-8 text-sm font-medium">
+                <li><a href="./index.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Home</a></li>
+                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">About
+                        Us</a>
+                </li>
+                <li><a href="./services.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a>
+                </li>
+                <li class="relative">
+                    <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
+                        data-dropdown-placement="bottom-start"
+                        class="flex items-center justify-between w-full text-gray-100 mons hover:text-blue-600 hover:underline smooth"
+                        type="button">
+                        Products
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div id="dropdownProducts"
+                        class="z-50 hidden bg-white divide-y divide-gray-100 rounded-xl shadow-lg w-56">
+                        <ul class="py-2 text-sm text-gray-700">
+
+                            <li>
+                                <a href="./hometextiles.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Home Textiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./hospital.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Institutional Textiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./healthcare.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Healthcare Textiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./terrytowels.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Terry Towels
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./apparels.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-600 transition mons">
+                                    Apparels
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./sustainability.html"
+                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
+                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">E-Broucher</a>
+                </li>
+
+            </ul>
+
+            <!-- Right Button -->
+            <div>
+                <a href="./contact.html"
+                    class="bg-[#2e3092] mons text-white px-5 py-4 rounded-full text-sm hover:bg-blue-700 transition">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav class="lg:hidden w-full fixed top-0 z-[999] bg-white shadow-md px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/logo-transparent.png" class="w-24"
+            alt="Logo">
+
+        <!-- Hamburger -->
+        <button id="openMenu" class="text-3xl">
+            ☰
+        </button>
+
+    </nav>
+    <!-- Overlay -->
+    <div id="overlay" class="fixed smooth inset-0 bg-black/50 hidden z-[998]"></div>
+
+    <!-- Side Menu -->
+
+    <div class="relative">
+        <div id="sideMenu"
+            class="fixed mons top-0 right-0 flex  flex-col justify-center h-full w-72 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-[999]">
+
+            <!-- Close button -->
+            <div class="flex top-4 right-4 justify-end absolute p-4">
+                <button id="closeMenu" class="text-2xl">✕</button>
+            </div>
+
+            <!-- Links -->
+            <ul class="flex flex-col space-y-6 px-6 text-sm font-medium">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="./sustainability.html">Sustainability</a></li>
+
+            </ul>
+
+            <!-- Button -->
+            <div class="px-6 mt-8">
+                <a href="./contact.html" class="block text-center bg-[#2e3092] text-white py-3 rounded-full">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Menu End -->
+
+
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img loading='lazy' src="./public/images/hmt2.webp" class="absolute inset-0 w-full h-full object-cover"
+            alt="About TajPak">
+
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20"></div>
+
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+
+            <h1 class="text-5xl md:text-5xl font-['Playfair_Display'] text-white">
+            Institutional Textiles
+            </h1>
+
+        </div>
+
+    </section>
+
+    <section class="bg-[#f7f6f4] py-20 relative overflow-hidden">
+
+        <!-- glow -->
+        <div class="absolute -top-20 left-0 w-96 h-96 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                    PREMIUM TEXTILE CATEGORIES
+                </p>
+
+                <p class="text-base text-[#6e6a5e] font-['Raleway'] leading-relaxed text-center max-w-4xl mx-auto">
+                    From serene bedrooms to bustling kitchens, elegant dining halls to demanding industrial
+                    environments, our Luxury Linen Collections combine comfort, durability, and design—whether you need
+                    premium bedding sets, durable kitchen textiles, elegant table linens for hotels and events, or
+                    heavy-duty industrial textiles. Every product is crafted with quality materials, thoughtful
+                    construction, and global certifications like OEKO-TEX® and ISO, delivering reliable performance wash
+                    after wash.
+                </p>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Beautiful FAQ Section -->
+    <section class="relative py-5 bg-gradient-to-br from-[#f7f6f4] via-white to-[#eef0ff] overflow-hidden">
+
+        <!-- Decorative Blobs -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#2e3092]/10 rounded-full blur-3xl"></div>
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <p class="tracking-[0.3em] text-sm text-gray-500 font-['Raleway'] mb-4">FAQ</p>
+                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26] leading-tight">
+                    Got Questions? <br>
+                    <span class="font-['Playfair_Display'] tcolor text-4xl md:text-5xl">We’ve Got Answers</span>
+                </h2>
+            </div>
+
+            <!-- Accordion -->
+            <div class="space-y-5">
+
+                <!-- Item 1 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What is your minimum order quantity (MOQ) for bulk institutional orders?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Our MOQ varies by product category. For standard items like fitted sheets, pillow covers,
+                            and table linen,
+                            we typically require 500–1,000 pieces per design. For custom products such as cushions,
+                            curtains, and thermal blankets,
+                            we accept smaller trial orders starting from 200–300 pieces. Contact us for a tailored
+                            quote.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Do you offer OEM and customization services?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Yes. We manufacture fully customized products based on your requirements including size,
+                            fabric, weave,
+                            thread count, color, printing method, packaging, and labeling. We can also work from your
+                            tech packs or samples.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What certifications do your products hold?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Our products are certified with OEKO-TEX® Standard 100, ISO 9001:2015, and REACH compliance.
+                            We also offer GRS (Global Recycled Standard) and flame-retardant certifications such as NFPA
+                            701 and BS 5867
+                            for specific product categories.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        How do I choose the right TOG rating for thermal blankets?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            TOG rating indicates thermal insulation. TOG 1.5 is ideal for mild climates, TOG 2.5 for
+                            year-round use,
+                            and TOG 4 for cold environments. We can help you select the best option based on your target
+                            market.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        Are your fitted sheets suitable for deep mattresses and institutional use?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Yes. Our fitted sheets include deep pockets up to 18 inches with full elastic edges.
+                            They are designed for institutional durability, frequent washing, and long-term shape
+                            retention.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                    <button
+                        class="faq-btn mons flex justify-between items-center w-full px-6 py-5 text-left font-medium text-gray-700">
+                        What is the difference between percale, sateen, and twill weaves?
+                        <span class="faq-icon transition-transform duration-300">+</span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+                        <p class="py-5 text-gray-500 font-['Raleway']">
+                            Percale is crisp, cool, and breathable. Sateen is smooth with a soft sheen and luxury feel.
+                            Twill is durable, wrinkle-resistant, and ideal for heavy-duty and institutional use.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2430] text-white relative overflow-hidden">
+
+        <!-- Soft glow -->
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-[#2e3092]/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-[#2e3092]/20 rounded-full blur-3xl"></div>
+
+        <div class="container 2xl:max-w-[1530px] mx-auto px-4 py-20 relative z-10">
+
+            <!-- Top Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">About TajPak</h3>
+
+                    <p class="text-white/70 text-sm leading-relaxed font-['Raleway']">
+                        TajPak is a trusted textile sourcing partner connecting global buyers with reliable
+                        manufacturers in Pakistan. We ensure quality, transparency, and smooth execution in every order.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Quick Links</h3>
+
+                    <ul class="space-y-3 text-sm text-white/70 font-['Raleway']">
+                        <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="./services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="./products.html" class="hover:text-white transition">Products</a></li>
+                        <li><a href="./certifications.html" class="hover:text-white transition">Certifications</a></li>
+                        <li><a href="./contact.html" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Products</h3>
+
+                    <ul class="space-y-3 text-sm text-white/70 font-['Raleway']">
+                        <li>
+                            <a href="./hometextiles.html" class="hover:text-[#2e3092] transition">
+                                Home Textiles
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./apparels.html" class="hover:text-[#2e3092] transition">
+                                Apparels
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terrytowels.html" class="hover:text-[#2e3092] transition">
+                                Terry Towels
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./healthcare.html" class="hover:text-[#2e3092] transition">
+                                Health Care Textiles
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-['Playfair_Display'] mb-6">Contact</h3>
+
+                    <ul class="space-y-4 text-sm text-white/70 font-['Raleway']">
+                        <li>📍 Faisalabad, Pakistan</li>
+                        <li>📞 +92 301 6097666</li>
+                        <li>✉ info@tajpak.com</li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-5 mt-6 text-lg">
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-[#2e3092] transition">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-white/10 my-12"></div>
+
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row items-center justify-between text-sm text-white/60 font-['Raleway']">
+
+                <p>© 2026 TajPak. All rights reserved.</p>
+
+                <div class="mt-4 md:mt-0 flex gap-6">
+                    <p>Designed with precision for global textile sourcing</p>
+                    <a href="./terms.html" class="hover:text-white transition">
+                        Terms & Conditions
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="./src/js/index.js"></script>
+    <script defer src="./src/js/gsap.js"></script>
+
+</body>
+
+
+</html>
