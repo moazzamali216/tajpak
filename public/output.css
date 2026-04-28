@@ -979,6 +979,9 @@ input[type="range"]::-ms-fill-lower {
 .right-6 {
   right: 1.5rem;
 }
+.-left-28 {
+  left: -7rem;
+}
 .\!z-\[9999\] {
   z-index: 9999 !important;
 }
@@ -1216,6 +1219,12 @@ input[type="range"]::-ms-fill-lower {
 .h-\[600px\] {
   height: 600px;
 }
+.h-\[460px\] {
+  height: 460px;
+}
+.h-\[280px\] {
+  height: 280px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1318,6 +1327,15 @@ input[type="range"]::-ms-fill-lower {
 .w-10 {
   width: 2.5rem;
 }
+.w-\[520px\] {
+  width: 520px;
+}
+.w-\[460px\] {
+  width: 460px;
+}
+.w-\[280px\] {
+  width: 280px;
+}
 .min-w-\[800px\] {
   min-width: 800px;
 }
@@ -1326,6 +1344,12 @@ input[type="range"]::-ms-fill-lower {
 }
 .min-w-\[172px\] {
   min-width: 172px;
+}
+.min-w-\[130px\] {
+  min-width: 130px;
+}
+.min-w-\[190px\] {
+  min-width: 190px;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -1365,6 +1389,12 @@ input[type="range"]::-ms-fill-lower {
 }
 .max-w-\[520px\] {
   max-width: 520px;
+}
+.max-w-\[650px\] {
+  max-width: 650px;
+}
+.max-w-\[560px\] {
+  max-width: 560px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -2102,6 +2132,12 @@ input[type="range"]::-ms-fill-lower {
 .leading-snug {
   line-height: 1.375;
 }
+.leading-\[1\.05\] {
+  line-height: 1.05;
+}
+.leading-\[1\.9\] {
+  line-height: 1.9;
+}
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -2302,6 +2338,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-blur: blur(64px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.blur-2xl {
+  --tw-blur: blur(40px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2453,6 +2493,11 @@ input[type="range"]::-ms-fill-lower {
 .hover\:bg-green-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(5 122 85 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#2e3092\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 48 146 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-600:hover {
@@ -2639,6 +2684,15 @@ input[type="range"]::-ms-fill-lower {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[15px\] {
+    font-size: 15px;
   }
 }
 
