@@ -1068,6 +1068,9 @@ input[type="range"]::-ms-fill-lower {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .inline {
   display: inline;
 }
@@ -1162,6 +1165,9 @@ input[type="range"]::-ms-fill-lower {
 .h-9 {
   height: 2.25rem;
 }
+.h-12 {
+  height: 3rem;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1245,6 +1251,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .w-9 {
   width: 2.25rem;
+}
+.w-12 {
+  width: 3rem;
 }
 .min-w-\[800px\] {
   min-width: 800px;
@@ -2154,6 +2163,10 @@ input[type="range"]::-ms-fill-lower {
 .text-amber-600 {
   --tw-text-opacity: 1;
   color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(240 82 82 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
