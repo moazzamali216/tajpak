@@ -1207,6 +1207,9 @@ input[type="range"]::-ms-fill-lower {
 .h-\[540px\] {
   height: 540px;
 }
+.h-\[580px\] {
+  height: 580px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -2107,6 +2110,9 @@ input[type="range"]::-ms-fill-lower {
 .tracking-\[0\.15em\] {
   letter-spacing: 0.15em;
 }
+.tracking-\[0\.25em\] {
+  letter-spacing: 0.25em;
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -2635,6 +2641,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
   }
 
   .lg\:block {
