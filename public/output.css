@@ -1342,6 +1342,12 @@ input[type="range"]::-ms-fill-lower {
 .h-\[200px\] {
   height: 200px;
 }
+.h-\[350px\] {
+  height: 350px;
+}
+.h-\[280px\] {
+  height: 280px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1476,6 +1482,12 @@ input[type="range"]::-ms-fill-lower {
 }
 .w-\[520px\] {
   width: 520px;
+}
+.w-\[350px\] {
+  width: 350px;
+}
+.w-\[280px\] {
+  width: 280px;
 }
 .min-w-\[110px\] {
   min-width: 110px;
@@ -2407,6 +2419,10 @@ input[type="range"]::-ms-fill-lower {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .pt-8 {
   padding-top: 2rem;
