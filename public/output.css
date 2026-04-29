@@ -1468,6 +1468,9 @@ input[type="range"]::-ms-fill-lower {
 .w-\[750px\] {
   width: 750px;
 }
+.w-\[520px\] {
+  width: 520px;
+}
 .min-w-\[110px\] {
   min-width: 110px;
 }
