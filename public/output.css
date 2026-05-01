@@ -2115,8 +2115,11 @@ input[type="range"]::-ms-fill-lower {
 .pt-8 {
   padding-top: 2rem;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pt-20 {
+  padding-top: 5rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pt-4 {
   padding-top: 1rem;
@@ -2135,18 +2138,6 @@ input[type="range"]::-ms-fill-lower {
 }
 .pl-8 {
   padding-left: 2rem;
-}
-.pt-20 {
-  padding-top: 5rem;
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-.pb-0 {
-  padding-bottom: 0px;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 .text-left {
   text-align: left;
