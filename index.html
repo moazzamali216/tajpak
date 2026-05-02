@@ -28,7 +28,7 @@
 
 <body class=" bg-gray-50">
   <!-- Dekstop Menu -->
-  <nav id="navbar" class="hidden lg:block w-full px-16 py-1.5 smooth bg-white fixed shadow-md z-[999] top-0">
+  <nav id="navbar" class="hidden lg:block w-full px-16 py-1.5 smooth bg-white fixed z-[999] top-0">
 
     <div class="max-w-7xl mx-auto flex items-center justify-between">
 
@@ -143,42 +143,47 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About Us</a></li>
         <li><a href="./services.html">Services</a></li>
-  <li>
-  <span class="block mb-2">Products</span>
-  <ul class="space-y-2 bg-gray-200 p-3 rounded-2xl text-sm">
-    
-    <li>
-      <a href="./hometextiles.html" class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-        Home Textiles
-      </a>
-    </li>
+        <li>
+          <span class="block mb-2">Products</span>
+          <ul class="space-y-2 bg-gray-200 p-3 rounded-2xl text-sm">
 
-    <li>
-      <a href="./apparels.html" class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-        Apparels
-      </a>
-    </li>
+            <li>
+              <a href="./hometextiles.html"
+                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
+                Home Textiles
+              </a>
+            </li>
 
-    <li>
-      <a href="./terrytowels.html" class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-        Bath Linen
-      </a>
-    </li>
+            <li>
+              <a href="./apparels.html"
+                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
+                Apparels
+              </a>
+            </li>
 
-    <li>
-      <a href="./healthcare.html" class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-        Health Care Textiles
-      </a>
-    </li>
+            <li>
+              <a href="./terrytowels.html"
+                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
+                Bath Linen
+              </a>
+            </li>
 
-    <li>
-      <a href="./hospital.html" class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
-        Institutional Textiles
-      </a>
-    </li>
+            <li>
+              <a href="./healthcare.html"
+                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
+                Health Care Textiles
+              </a>
+            </li>
 
-  </ul>
-</li>
+            <li>
+              <a href="./hospital.html"
+                class="block w-full bg-white px-3 py-2 rounded-lg hover:text-[#2e3092] transition">
+                Institutional Textiles
+              </a>
+            </li>
+
+          </ul>
+        </li>
         <li><a href="./sustainability.html">Sustainability</a></li>
 
       </ul>
@@ -195,56 +200,82 @@
 
   <!-- Mobile Menu End -->
 
-
-  <div class="relative hero-sec">
+  <div class="relative mt-[50px] hero-sec">
 
     <!-- Image -->
-    <img loading="lazy" src="./public/images/gif.gif" autoplay decoding="async" class="w-full h-screen object-cover"
+    <img loading="lazy" src="./public/images/hero.webp" decoding="async" class="w-full h-screen object-cover"
       alt="Hero Image">
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
 
     <!-- Content -->
-    <div class="absolute inset-0 flex items-center justify-center">
+    <div class="absolute inset-0 flex items-center">
 
-      <div class="text-center  text-white px-4 max-w-4xl mx-auto">
+      <div class="text-left text-white px-8 md:px-16 lg:px-24 max-w-3xl">
 
         <!-- Small Label -->
-        <p class="tracking-[0.4em] text-xs md:text-sm  text-white/70 mb-6 animate-up">
-          GLOBAL TEXTILE SOURCING
-        </p>
-
-        <!-- Heading -->
-        <h1 class="text-4xl md:text-5xl leading-tight font-['Playfair_Display'] font-medium animate-up">
-          Integrated Sourcing Network
-          <br>
-          <span class="font-['Playfair_Display'] tcolor  ">
-            in Pakistan
-          </span>
-        </h1>
-
-        <!-- Sub Text -->
-        <p class="text-base text-white/80 mt-6 mb-10 mons leading-relaxed animate-up" data-delay="0.4">
-          Connecting global buyers with trusted manufacturers through <br>
-          reliable sourcing, quality assurance, and seamless execution.
-        </p>
-
-        <!-- CTA -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4 ">
-
-          <a href="./about.html"
-            class="bg-[#2e3092] mons text-white px-8 py-3 rounded-full text-sm hover:bg-blue-700 transition">
-            Learn More
-          </a>
-
-          <a href="./contact.html"
-            class="border border-white/40 px-8 py-3 mons rounded-full text-sm hover:bg-white hover:text-black transition">
-            Get in Touch
-          </a>
-
+        <div class="flex items-center gap-3 mb-6 ">
+          <span class="w-10 h-[2px] bg-white/60"></span>
+          <p class="tracking-[0.4em] text-xs text-white/70 font-['Raleway']">
+            GLOBAL TEXTILE SOURCING
+          </p>
         </div>
 
+        <!-- Heading -->
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl leading-tight font-['Playfair_Display'] font-medium animate-up mb-6">
+          Integrated Sourcing <br>
+          Network in <span class="tcolor">Pakistan</span>
+        </h1>
+
+        <!-- Divider -->
+        <div class="w-16 h-[3px] bg-[#2e3092] mb-6 -up"></div>
+
+        <!-- Sub Text -->
+        <p class="text-base md:text-lg text-white/75 mons leading-relaxed animate-up mb-10 max-w-xl">
+          Connecting global buyers with trusted manufacturers through reliable sourcing, quality assurance, and seamless
+          execution.
+        </p>
+
+        <!-- Stats Row -->
+        <div class="flex items-center gap-8 mb-10 animae-up">
+          <div>
+            <p class="text-2xl font-bold font-['Playfair_Display']">25+</p>
+            <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">YEARS EXPERIENCE</p>
+          </div>
+          <div class="w-[1px] h-10 bg-white/20"></div>
+          <div>
+            <p class="text-2xl font-bold font-['Playfair_Display']">25+</p>
+            <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">COUNTRIES SERVED</p>
+          </div>
+          <div class="w-[1px] h-10 bg-white/20"></div>
+          <div>
+            <p class="text-2xl font-bold font-['Playfair_Display']">500K+</p>
+            <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">ORDERS COMPLETED</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex flex-col sm:flex-row gap-4 a">
+          <a href="./about.html"
+            class="bg-[#2e3092] mons text-white px-8 py-3  text-sm hover:bg-blue-700 transition text-center">
+            Learn More
+          </a>
+          <a href="./contact.html"
+            class="border border-white/40 px-8 py-3 mons text-sm hover:bg-white hover:text-black transition text-center">
+            Get in Touch
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 -§">
+      <p class="text-white/80 text-xs tracking-[0.3em] font-['Raleway']">SCROLL</p>
+      <div class="w-[1px] h-10 bg-white/70 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1/2 bg-white/60 animate-bounce"></div>
       </div>
     </div>
 
@@ -1163,18 +1194,19 @@
       </div>
 
     </div>
-                    <div class="text-center pb-5 text-sm mons font-light text-gray-400 capitalize">
+    <div class="text-center pb-5 text-sm mons font-light text-gray-400 capitalize">
 
-Developed By
-            <a href="https://wa.me/923224066958" target="_blank" class="text-blue-800 font-semibold hover:underline">
-                MAC
-            </a>
+      Developed By
+      <a href="https://wa.me/923224066958" target="_blank" class="text-blue-800 font-semibold hover:underline">
+        MAC
+      </a>
 
-            <br>
+      <br>
 
 
 
-        </div></footer>
+    </div>
+  </footer>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
