@@ -2265,6 +2265,18 @@ input[type="range"]::-ms-fill-lower {
   -o-object-position: center;
      object-position: center;
 }
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+.object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
 .p-4 {
   padding: 1rem;
 }
