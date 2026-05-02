@@ -200,7 +200,7 @@
 
   <!-- Mobile Menu End -->
 
-  <div class="relative mt-[50px] hero-sec">
+  <div class="relative sm:block hidden mt-[50px] hero-sec">
 
     <!-- Swiper Background Slider -->
     <div class="swiper heroSwiper w-full h-screen">
@@ -227,14 +227,14 @@
             alt="Hero Image 1">
         </div>
         <div class="swiper-slide">
-          <img loading="lazy" src="./public/images/hero5.webp" decoding="async" class="w-full h-screen object-top object-cover"
-            alt="Hero Image 1">
+          <img loading="lazy" src="./public/images/hero5.webp" decoding="async"
+            class="w-full h-screen object-top object-cover" alt="Hero Image 1">
         </div>
         <div class="swiper-slide">
-          <img loading="lazy" src="./public/images/hero6.webp" decoding="async" class="w-full h-screen object-right-top object-cover"
-            alt="Hero Image 1">
+          <img loading="lazy" src="./public/images/hero6.webp" decoding="async"
+            class="w-full h-screen object-right-top object-cover" alt="Hero Image 1">
         </div>
-  
+
 
       </div>
     </div>
@@ -316,6 +316,72 @@
       <div class="w-[1px] h-10 bg-white/70 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-1/2 bg-white/60 animate-bounce"></div>
       </div>
+    </div>
+
+  </div>
+
+  <!-- MOBILE HERO -->
+  <div class="relative sm:hidden block mt-[60px]">
+
+    <!-- Image -->
+    <img loading="lazy" src="./public/images/homeher.webp" decoding="async" class="w-full h-screen object-cover"
+      alt="Hero Image">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+
+    <!-- Content -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+
+      <!-- Label -->
+      <p class="tracking-[0.4em] text-[10px] text-white/60 font-['Raleway'] mb-5">
+        GLOBAL TEXTILE SOURCING
+      </p>
+
+      <!-- Heading -->
+      <h1 class="font-['Playfair_Display'] font-medium text-4xl leading-tight mb-4">
+        Integrated Sourcing <br>
+        Network in <span class="tcolor">Pakistan</span>
+      </h1>
+
+      <!-- Divider -->
+      <div class="w-12 h-[2px] bg-[#2e3092] mb-4"></div>
+
+      <!-- Subtext -->
+      <p class="text-sm text-white/70 mons leading-relaxed mb-8 max-w-xs">
+        Connecting global buyers with trusted manufacturers through reliable sourcing and seamless execution.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col gap-3 w-full max-w-xs">
+        <a href="./about.html"
+          class="bg-[#2e3092] mons text-white py-3 text-sm hover:bg-blue-700 transition text-center">
+          Learn More
+        </a>
+        <a href="./contact.html"
+          class="border border-white/40 py-3 mons text-sm hover:bg-white hover:text-black transition text-center">
+          Get in Touch
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="absolute bottom-10 flex items-center gap-6">
+        <div class="text-center">
+          <p class="text-xl font-bold font-['Playfair_Display']">25+</p>
+          <p class="text-[9px] text-white/50 font-['Raleway'] tracking-wider mt-1">YEARS</p>
+        </div>
+        <div class="w-[1px] h-8 bg-white/20"></div>
+        <div class="text-center">
+          <p class="text-xl font-bold font-['Playfair_Display']">25+</p>
+          <p class="text-[9px] text-white/50 font-['Raleway'] tracking-wider mt-1">COUNTRIES</p>
+        </div>
+        <div class="w-[1px] h-8 bg-white/20"></div>
+        <div class="text-center">
+          <p class="text-xl font-bold font-['Playfair_Display']">500K+</p>
+          <p class="text-[9px] text-white/50 font-['Raleway'] tracking-wider mt-1">ORDERS</p>
+        </div>
+      </div>
+
     </div>
 
   </div>
