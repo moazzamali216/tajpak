@@ -200,86 +200,136 @@
 
   <!-- Mobile Menu End -->
 
-  <div class="relative mt-[50px] hero-sec">
+<div class="relative mt-[50px] hero-sec">
 
-    <!-- Image -->
-    <img loading="lazy" src="./public/images/hero.webp" decoding="async" class="w-full h-screen object-cover"
-      alt="Hero Image">
+    <!-- Swiper Background Slider -->
+    <div class="swiper heroSwiper w-full h-screen">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img loading="lazy" src="./public/images/hero.webp" decoding="async"
+                    class="w-full h-screen object-cover" alt="Hero Image 1">
+            </div>
+
+            <div class="swiper-slide">
+                <img loading="lazy" src="./public/images/homeher.webp" decoding="async"
+                    class="w-full h-screen object-cover" alt="Hero Image 2">
+            </div>
+
+            <div class="swiper-slide">
+                <img loading="lazy" src="./public/images/h10.webp" decoding="async"
+                    class="w-full h-screen object-cover" alt="Hero Image 3">
+            </div>
+
+            <div class="swiper-slide">
+                <img loading="lazy" src="./public/images/h9.webp" decoding="async"
+                    class="w-full h-screen object-cover" alt="Hero Image 4">
+            </div>
+
+        </div>
+    </div>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent z-10"></div>
 
     <!-- Content -->
-    <div class="absolute inset-0 flex items-center">
+    <div class="absolute inset-0 flex items-center z-20">
 
-      <div class="text-left text-white px-8 md:px-16 lg:px-24 max-w-3xl">
+        <div class="text-left text-white px-8 md:px-16 lg:px-24 max-w-3xl">
 
-        <!-- Small Label -->
-        <div class="flex items-center gap-3 mb-6 ">
-          <span class="w-10 h-[2px] bg-white/60"></span>
-          <p class="tracking-[0.4em] text-xs text-white/70 font-['Raleway']">
-            GLOBAL TEXTILE SOURCING
-          </p>
+            <!-- Small Label -->
+            <div class="flex items-center gap-3 mb-6">
+                <span class="w-10 h-[2px] bg-white/60"></span>
+                <p class="tracking-[0.4em] text-xs text-white/70 font-['Raleway']">
+                    GLOBAL TEXTILE SOURCING
+                </p>
+            </div>
+
+            <!-- Heading -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl leading-tight font-['Playfair_Display'] font-medium animate-up mb-6">
+                Integrated Sourcing <br>
+                Network in <span class="">Pakistan</span>
+            </h1>
+
+            <!-- Divider -->
+            <div class="w-16 h-[3px] bg-[#2e3092] mb-6"></div>
+
+            <!-- Sub Text -->
+            <p class="text-base md:text-lg text-white/75 mons leading-relaxed animate-up mb-10 max-w-xl">
+                Connecting global buyers with trusted manufacturers through reliable sourcing, quality assurance, and seamless execution.
+            </p>
+
+            <!-- Stats Row -->
+            <div class="flex items-center gap-8 mb-10">
+                <div>
+                    <p class="text-2xl font-bold font-['Playfair_Display']">25+</p>
+                    <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">YEARS EXPERIENCE</p>
+                </div>
+                <div class="w-[1px] h-10 bg-white/20"></div>
+                <div>
+                    <p class="text-2xl font-bold font-['Playfair_Display']">25+</p>
+                    <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">COUNTRIES SERVED</p>
+                </div>
+                <div class="w-[1px] h-10 bg-white/20"></div>
+                <div>
+                    <p class="text-2xl font-bold font-['Playfair_Display']">500K+</p>
+                    <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">ORDERS COMPLETED</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="./about.html"
+                    class="bg-[#2e3092] mons text-white px-8 py-3 text-sm hover:bg-blue-700 transition text-center">
+                    Learn More
+                </a>
+                <a href="./contact.html"
+                    class="border border-white/40 px-8 py-3 mons text-sm hover:bg-white hover:text-black transition text-center">
+                    Get in Touch
+                </a>
+            </div>
+
         </div>
+    </div>
 
-        <!-- Heading -->
-        <h1
-          class="text-4xl md:text-5xl lg:text-6xl leading-tight font-['Playfair_Display'] font-medium animate-up mb-6">
-          Integrated Sourcing <br>
-          Network in <span class="">Pakistan</span>
-        </h1>
-
-        <!-- Divider -->
-        <div class="w-16 h-[3px] bg-[#2e3092] mb-6 -up"></div>
-
-        <!-- Sub Text -->
-        <p class="text-base md:text-lg text-white/75 mons leading-relaxed animate-up mb-10 max-w-xl">
-          Connecting global buyers with trusted manufacturers through reliable sourcing, quality assurance, and seamless
-          execution.
-        </p>
-
-        <!-- Stats Row -->
-        <div class="flex items-center gap-8 mb-10 animae-up">
-          <div>
-            <p class="text-2xl font-bold font-['Playfair_Display']">25+</p>
-            <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">YEARS EXPERIENCE</p>
-          </div>
-          <div class="w-[1px] h-10 bg-white/20"></div>
-          <div>
-            <p class="text-2xl font-bold font-['Playfair_Display']">25+</p>
-            <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">COUNTRIES SERVED</p>
-          </div>
-          <div class="w-[1px] h-10 bg-white/20"></div>
-          <div>
-            <p class="text-2xl font-bold font-['Playfair_Display']">500K+</p>
-            <p class="text-xs text-white/60 font-['Raleway'] tracking-wider mt-1">ORDERS COMPLETED</p>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="flex flex-col sm:flex-row gap-4 a">
-          <a href="./about.html"
-            class="bg-[#2e3092] mons text-white px-8 py-3  text-sm hover:bg-blue-700 transition text-center">
-            Learn More
-          </a>
-          <a href="./contact.html"
-            class="border border-white/40 px-8 py-3 mons text-sm hover:bg-white hover:text-black transition text-center">
-            Get in Touch
-          </a>
-        </div>
-
-      </div>
+    <!-- Slide Counter — Bottom Right -->
+    <div class="absolute bottom-10 right-10 z-20 flex items-center gap-3">
+        <span class="hero-current font-['Playfair_Display'] text-white text-2xl">01</span>
+        <div class="w-16 h-[1px] bg-white/30"></div>
+        <span class="hero-total font-['Raleway'] text-white/40 text-sm">04</span>
     </div>
 
     <!-- Bottom Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 -§">
-      <p class="text-white/80 text-xs tracking-[0.3em] font-['Raleway']">SCROLL</p>
-      <div class="w-[1px] h-10 bg-white/70 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-1/2 bg-white/60 animate-bounce"></div>
-      </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20">
+        <p class="text-white/80 text-xs tracking-[0.3em] font-['Raleway']">SCROLL</p>
+        <div class="w-[1px] h-10 bg-white/70 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-white/60 animate-bounce"></div>
+        </div>
     </div>
 
-  </div>
+</div>
+
+<!-- Hero Swiper Init -->
+<script>
+    const heroSwiper = new Swiper('.heroSwiper', {
+        loop: true,
+        speed: 1500,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        on: {
+            slideChange: function () {
+                const current = String(this.realIndex + 1).padStart(2, '0');
+                document.querySelector('.hero-current').textContent = current;
+            }
+        }
+    });
+</script>
 
   <!-- Our story -->
   <div class="bg-[#c8c8ff1a] relative ourstory-sec">
