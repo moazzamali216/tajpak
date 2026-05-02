@@ -2202,6 +2202,11 @@ input[type="range"]::-ms-fill-lower {
   --tw-gradient-to: rgb(0 0 0 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-black\/90 {
+  --tw-gradient-from: rgb(0 0 0 / 0.9);
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .via-black\/50 {
   --tw-gradient-to: rgb(0 0 0 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0.5), var(--tw-gradient-to);
