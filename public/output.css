@@ -1150,6 +1150,9 @@ input[type="range"]::-ms-fill-lower {
 .hidden {
   display: none;
 }
+.\!hidden {
+  display: none !important;
+}
 .h-4 {
   height: 1rem;
 }
@@ -3063,6 +3066,10 @@ input[type="range"]::-ms-fill-lower {
 
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:h-screen {
