@@ -29,7 +29,7 @@
 
 <body class=" bg-gray-50">
     <!-- Dekstop Menu -->
-    <nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
+    <nav id="navbar" class="hidden lg:block w-full px-16 py-1.5 smooth bg-white fixed shadow-md z-[999] top-0">
 
         <div class="max-w-7xl mx-auto flex items-center justify-between">
 
@@ -42,17 +42,17 @@
             <!-- Center Menu -->
             <ul class="flex items-center space-x-8 text-sm font-medium">
                 <li><a href="./index.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Home</a></li>
-                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">About
+                        class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Home</a></li>
+                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">About
                         Us</a>
                 </li>
                 <li><a href="./services.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a>
+                        class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Services</a>
                 </li>
                 <li class="relative">
                     <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
                         data-dropdown-placement="bottom-start"
-                        class="flex items-center justify-between w-full text-gray-100 mons hover:text-blue-600 hover:underline smooth"
+                        class="flex items-center justify-between w-full text-gray-700 mons hover:text-blue-600 hover:underline smooth"
                         type="button">
                         Products
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,8 +103,8 @@
                     </div>
                 </li>
                 <li><a href="./sustainability.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
-                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">E-Broucher</a>
+                        class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Sustainability</a></li>
+                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">E-Broucher</a>
                 </li>
 
             </ul>
@@ -211,7 +211,7 @@
     <!-- Mobile Menu End -->
 
 
-    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+    <section class="relative h-[500px] mt-[50px] flex items-center justify-center overflow-hidden">
 
         <!-- Background Image -->
         <img loading='lazy' src="./public/images/apr5.webp" class="absolute inset-0 w-full h-full object-cover"
@@ -349,7 +349,26 @@
                         </div>
                     </div>
                 </li>
+                <li role="presentation">
+                    <div id="totebags-tab" data-tabs-target="#totebags" role="tab"
+                        class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
 
+                        <div class="h-64 overflow-hidden">
+                            <img loading="lazy" decoding="async" fetchpriority="low"
+                                src="./public/images/ex2.webp"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                        </div>
+
+                        <div class="p-5 text-center">
+                            <h3 class="text-lg font-['Playfair_Display'] text-[#2d2a26]">
+                                Tote Bags
+                            </h3>
+                            <p class="text-sm text-[#6e6a5e] mt-2 mons">
+                                Durable, stylish tote bags crafted for retail, promotional, and everyday use.
+                            </p>
+                        </div>
+                    </div>
+                </li>
             </ul>
 
             <!-- CONTENT -->
@@ -656,21 +675,18 @@
 
                             <!-- 17. DENIM JEANS -->
                             <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
-                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
-                                    <img src="./public/images/apr14.webp" class="w-full h-full object-cover"
-                                        loading="lazy" decoding="async" fetchpriority="low" alt="Denim Jeans" />
-                                </div>
 
-                                <div class="text-start">
-                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
                                         Denim Jeans
                                     </h3>
-                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
                                         As exporters and suppliers of denim jeans, we partner with innovative
                                         manufacturers capable of delivering high-quality products while fully
                                         understanding buyer specifications and requirements.
                                     </p>
-                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
                                         <li>• <strong>Stretch Denim</strong> – Ideal for fitted cuts and close-fitting
                                             garments</li>
                                         <li>• <strong>100% Cotton Denim</strong> – Better suited for baggier, relaxed
@@ -683,24 +699,32 @@
                                             partnerships built on trust, consistency, and mutual growth</li>
                                     </ul>
                                 </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/apr14.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low" alt="Denim Jeans" />
+                                </div>
+
                             </div>
 
                             <!-- 18. CASUAL SHIRTS -->
                             <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+                                    <img src="./public/images/apr11.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low" alt="Casual Shirts" />
+                                </div>
 
-                                <!-- TEXT -->
-                                <div class="order-2 md:order-1">
-                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                <div class="text-start">
+                                    <h3 class="text-3xl font-['Playfair_Display'] text-[#2d2a26] mb-4">
                                         Formal and Casual Shirts
                                     </h3>
-
-                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                    <p class="mons text-[#6e6a5e] leading-relaxed mb-4">
                                         Elevate everyday dressing with our formal and casual shirts — as experienced
                                         exporters, we design shirts that boost confidence, refine personality, and
                                         project a polished image adaptable across both smart-casual and formal settings.
                                     </p>
-
-                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                    <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
                                         <li>• <strong>Premium fabrics</strong> – 100% woven cotton, flannel, viscose,
                                             and other high-quality materials for comfort and durability</li>
                                         <li>• <strong>Casual versatility</strong> – Relaxed fit and adaptable style
@@ -712,11 +736,45 @@
                                             for consistent bulk quality</li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            <!-- 40. PUFFER & LEATHER JACKETS -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Puffer & Leather Jackets
+                                    </h3>
+
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        At TajPak, our puffer and leather jackets combine style, warmth, and durability
+                                        for wholesale buyers worldwide. Ideal for retail brands, uniform programs,
+                                        outdoor suppliers, and winter wear collections.
+                                    </p>
+
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                        <li>• <strong>Puffer shells</strong> – Lightweight nylon or polyester with
+                                            premium down (550–750 fill power, RDS certified), down alternative (200–300
+                                            GSM), or high-loft synthetic fill</li>
+                                        <li>• <strong>Leather options</strong> – Genuine sheepskin, goatskin, or PU
+                                            leather in solid, distressed, or two-tone finishes</li>
+                                        <li>• <strong>Sizing</strong> – XS to 5XL; custom sizing available</li>
+                                        <li>• <strong>Certifications</strong> – OEKO-TEX® and ISO certified</li>
+                                        <li>• <strong>Puffer features</strong> – Water-resistant, packable, machine
+                                            washable; removable hoods and zipper closures</li>
+                                        <li>• <strong>Leather features</strong> – Wipe-clean, breathable lining,
+                                            nickel-free hardware; matte or glossy finishes</li>
+                                        <li>• <strong>Custom options</strong> – Bulk orders, private labeling, and
+                                            custom tech pack manufacturing available</li>
+                                    </ul>
+                                </div>
 
                                 <!-- IMAGE -->
-                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="./public/images/apr11.webp" class="w-full h-full object-cover"
-                                        loading="lazy" decoding="async" fetchpriority="low" alt="Casual Shirts" />
+                                <div class="order-1 h-[420px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/ex1.webp" class="w-full h-full object-cover"
+                                        loading="lazy" decoding="async" fetchpriority="low"
+                                        alt="Puffer & Leather Jackets" />
                                 </div>
 
                             </div>
@@ -978,7 +1036,7 @@
                                 <!-- IMAGE -->
                                 <div
                                     class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg bg-white">
-                                    <img src="./public/images/apr23.webp" class="w-full h-full object-contain"
+                                    <img src="./public/images/apr23.webp" class="w-full h-full object-cover"
                                         loading="lazy" decoding="async" fetchpriority="low" alt="Sports Gloves" />
                                 </div>
 
@@ -1093,7 +1151,7 @@
                             </div>
 
                             <!-- 32. WORKWEAR -->
-                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-24">
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-10">
 
                                 <!-- TEXT -->
                                 <div class="order-2 md:order-1">
@@ -1102,24 +1160,39 @@
                                     </h3>
 
                                     <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
-                                        As exporters of workwear apparel, we manufacture garments built to withstand
-                                        rigorous physical labour. Traditionally crafted from heavyweight cotton drill
-                                        with a roomy fit to wear over everyday clothing, our workwear now also
-                                        incorporates modern performance fabrics for water and wind resistance, thermal
-                                        insulation, and moisture management.
+                                        At TajPak, we manufacture and export high-quality workwear apparel to bulk
+                                        buyers worldwide — including large retailers, industrial manufacturers,
+                                        government agencies, and corporate uniform programs. Our workwear balances
+                                        durability, comfort, safety, and compliance with international industry
+                                        standards.
                                     </p>
 
                                     <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-2">
                                         Product range:
                                     </p>
 
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm mb-4">
+                                        <li>• <strong>Coveralls & Overalls</strong> – Full-body protection for
+                                            construction, automotive, painting, and industrial cleaning</li>
+                                        <li>• <strong>Work Pants</strong> – Denim, canvas, or ripstop with reinforced
+                                            knees and multiple utility pockets</li>
+                                        <li>• <strong>Work Shirts</strong> – Heavy-duty cotton or poly blends with chest
+                                            pockets and ventilation panels</li>
+                                        <li>• <strong>High-Visibility Apparel</strong> – ANSI/ISEA 107 compliant;
+                                            fluorescent yellow, orange, and lime with 3M™ reflective tape</li>
+                                        <li>• <strong>Flame-Resistant (FR) Workwear</strong> – Nomex, Kevlar, or treated
+                                            cotton for electrical, oil & gas, and welding industries</li>
+                                        <li>• <strong>Waterproof & Weatherproof</strong> – PVC-coated or breathable
+                                            membrane jackets and pants for outdoor and marine environments</li>
+                                    </ul>
+
                                     <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
-                                        <li>• Coveralls</li>
-                                        <li>• Bib and brace sets</li>
-                                        <li>• Anti-static and flame-resistant garments</li>
-                                        <li>• High-visibility clothing</li>
-                                        <li>• Work trousers</li>
-                                        <li>• Work jackets</li>
+                                        <li>• <strong>Certifications</strong> – OEKO-TEX®, ISO 9001:2015, ANSI/ISEA 107,
+                                            NFPA 2112/70E, EN ISO 11611/11612, REACH</li>
+                                        <li>• <strong>Sizing</strong> – XS to 6XL; men's, women's, and unisex; custom
+                                            Pantone colors and private labeling</li>
+                                        <li>• <strong>Quality control</strong> – AQL 1.5 or 2.5; MOQ 1,000–5,000 pieces
+                                            per style</li>
                                     </ul>
                                 </div>
 
@@ -1128,6 +1201,124 @@
                                     class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden bg-white shadow-lg">
                                     <img src="./public/images/apr15.webp" class="w-full h-full object-contain"
                                         loading="lazy" decoding="async" fetchpriority="low" alt="Workwear" />
+                                </div>
+
+                            </div>
+
+                            <!-- EXTENDED DATA -->
+                            <div class="mb-24">
+
+                                <!-- Materials Table -->
+                                <p class="mons text-[#6e6a5e] leading-relaxed mb-4 font-semibold">
+                                    Coveralls & Overalls — Material Specifications:
+                                </p>
+
+                                <div class="overflow-x-auto rounded-xl shadow-sm border border-gray-200 mb-8">
+                                    <table class="w-full text-sm text-left text-[#6e6a5e] mons">
+                                        <thead class="bg-[#f7f6f4] text-[#2d2a26] border-b border-gray-200">
+                                            <tr>
+                                                <th class="px-5 py-3 font-semibold">Material</th>
+                                                <th class="px-5 py-3 font-semibold">GSM Range</th>
+                                                <th class="px-5 py-3 font-semibold">Key Properties</th>
+                                                <th class="px-5 py-3 font-semibold">Best For</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-100">
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">100% Cotton</td>
+                                                <td class="px-5 py-3">200–400</td>
+                                                <td class="px-5 py-3">Breathable, soft, moisture-absorbing, machine
+                                                    washable</td>
+                                                <td class="px-5 py-3">General indoor work, light manufacturing, painting
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Polyester/Cotton (65:35
+                                                    or 50:50)</td>
+                                                <td class="px-5 py-3">200–300</td>
+                                                <td class="px-5 py-3">Wrinkle-resistant, shrink-resistant, quick-drying
+                                                </td>
+                                                <td class="px-5 py-3">Industrial use, logistics, automotive repair</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Nomex (meta-aramid)
+                                                </td>
+                                                <td class="px-5 py-3">150–200</td>
+                                                <td class="px-5 py-3">Flame-resistant, self-extinguishing,
+                                                    heat-resistant</td>
+                                                <td class="px-5 py-3">Firefighting, electrical, oil & gas, welding</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Denim (cotton or
+                                                    cotton/poly)</td>
+                                                <td class="px-5 py-3">300–400</td>
+                                                <td class="px-5 py-3">Heavy-duty, abrasion-resistant, structured fit
+                                                </td>
+                                                <td class="px-5 py-3">Construction, heavy equipment, farming</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Twill (cotton or
+                                                    poly-cotton)</td>
+                                                <td class="px-5 py-3">220–320</td>
+                                                <td class="px-5 py-3">Durable, flexible, tear-resistant</td>
+                                                <td class="px-5 py-3">General industrial, warehousing, transportation
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Ripstop (nylon or
+                                                    poly-cotton)</td>
+                                                <td class="px-5 py-3">150–250</td>
+                                                <td class="px-5 py-3">Tear-resistant, lightweight, reinforced grid
+                                                    pattern</td>
+                                                <td class="px-5 py-3">Outdoor work, military, tactical applications</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Kevlar (para-aramid)
+                                                </td>
+                                                <td class="px-5 py-3">180–300</td>
+                                                <td class="px-5 py-3">Cut-resistant, heat-resistant, extremely strong
+                                                </td>
+                                                <td class="px-5 py-3">High-risk industries, glass handling, metal
+                                                    fabrication</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Additional Features & Why TajPak -->
+                                <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10">
+
+                                    <div>
+                                        <p class="mons text-[#6e6a5e] leading-relaxed mb-2 font-semibold">Additional
+                                            features available:</p>
+                                        <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                            <li>• Reinforced stitching at stress points (knees, elbows, seat)</li>
+                                            <li>• Multiple utility pockets, tool loops, and hammer loops</li>
+                                            <li>• Two-way heavy-duty zippers with storm flaps</li>
+                                            <li>• Elasticized waistbands or adjustable side tabs</li>
+                                            <li>• High-visibility reflective striping (3M™ Scotchlite™)</li>
+                                            <li>• FR treatment, water/oil-repellent and anti-static finishes</li>
+                                            <li>• Custom embroidery or screen-printed logos</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <p class="mons text-[#6e6a5e] leading-relaxed mb-2 font-semibold">Why choose
+                                            TajPak:</p>
+                                        <ul class="text-[#6e6a5e] mons space-y-2 text-sm">
+                                            <li>• End-to-end manufacturing — fabric sourcing, cutting, sewing,
+                                                finishing, packaging</li>
+                                            <li>• Rigorous quality control at every stage (AQL 1.5 or 2.5 per buyer)
+                                            </li>
+                                            <li>• Competitive pricing for bulk quantities (MOQ 1,000–5,000 pieces per
+                                                style)</li>
+                                            <li>• Flexible payment terms (T/T, L/C) and shipping options (FOB, CIF, EXW)
+                                            </li>
+                                            <li>• Sample development and tech pack assistance available</li>
+                                            <li>• Care labels and wash instructions provided with every shipment</li>
+                                        </ul>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -1246,6 +1437,166 @@
                         </div>
                     </div>
                     </p>
+                </div>
+                <div class="hidden text-center" id="totebags">
+                    <div class="bg-[#f7f6f4] py-24 relative overflow-hidden">
+
+                        <!-- background effects -->
+                        <div class="absolute -top-32 left-0 w-[30rem] h-[30rem] bg-[#2e3092]/10 rounded-full blur-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-emerald-200/20 rounded-full blur-3xl">
+                        </div>
+
+                        <div class="container 2xl:max-w-[1530px] mx-auto px-4 relative z-10">
+
+                            <!-- HEADER -->
+                            <div class="text-center mb-20">
+                                <p class="tracking-[0.35em] text-sm text-gray-500 font-['Raleway'] mb-4">
+                                    BAGS & ACCESSORIES DIVISION
+                                </p>
+                                <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] text-[#2d2a26]">
+                                    Premium <span class="tcolor">Tote Bags</span>
+                                </h2>
+                                <p class="mt-6 max-w-3xl mx-auto text-[#6e6a5e] font-['Raleway'] leading-relaxed">
+                                    At TajPak, we manufacture and export high-quality tote bags for retail brands,
+                                    promotional campaigns,
+                                    corporate gifting, and everyday use. Built for durability, style, and sustainability
+                                    — every bag is
+                                    produced to your exact specifications.
+                                </p>
+                            </div>
+
+                            <!-- TOTE BAGS GRID -->
+                            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10 mb-10">
+
+                                <!-- TEXT -->
+                                <div class="order-2 md:order-1">
+                                    <h3 class="text-3xl text-start font-['Playfair_Display'] text-[#2d2a26] mb-4">
+                                        Tote Bags
+                                    </h3>
+                                    <p class="mons text-start text-[#6e6a5e] leading-relaxed mb-4">
+                                        Our tote bags combine practicality with aesthetic appeal — ideal for grocery
+                                        shopping, retail
+                                        packaging, beach use, corporate branding, and eco-friendly promotions worldwide.
+                                    </p>
+                                    <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm mb-4">
+                                        <li>• <strong>Materials</strong> – 100% Cotton canvas, jute, non-woven
+                                            polypropylene, polyester, recycled PET, and organic cotton</li>
+                                        <li>• <strong>GSM range</strong> – 180 GSM to 400 GSM depending on weight and
+                                            usage requirements</li>
+                                        <li>• <strong>Handle options</strong> – Short, long, rope, webbing, or custom
+                                            length handles in matching or contrast colors</li>
+                                        <li>• <strong>Closure types</strong> – Open top, zipper, magnetic snap,
+                                            drawstring, or button closure</li>
+                                        <li>• <strong>Printing methods</strong> – Screen printing, digital print, heat
+                                            transfer, embroidery, and woven label branding</li>
+                                        <li>• <strong>Certifications</strong> – OEKO-TEX® Standard 100, GOTS certified
+                                            organic options available</li>
+                                        <li>• <strong>Customization</strong> – Custom sizes, colors, Pantone matching,
+                                            private labeling, and retail packaging</li>
+                                    </ul>
+                                </div>
+
+                                <!-- IMAGE -->
+                                <div class="order-1 h-[450px] md:order-2 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="./public/images/ex3.webp"
+                                        class="w-full h-full object-cover" loading="lazy" decoding="async"
+                                        fetchpriority="low" alt="Tote Bags" />
+                                </div>
+
+                            </div>
+
+                            <!-- EXTENDED DATA -->
+                            <div class="mb-24">
+
+                                <!-- Types Table -->
+                                <p class="mons text-[#6e6a5e] leading-relaxed mb-4 font-semibold text-start">
+                                    Tote Bag Types & Specifications:
+                                </p>
+
+                                <div class="overflow-x-auto rounded-xl shadow-sm border border-gray-200 mb-8">
+                                    <table class="w-full text-sm text-left text-[#6e6a5e] mons">
+                                        <thead class="bg-[#f7f6f4] text-[#2d2a26] border-b border-gray-200">
+                                            <tr>
+                                                <th class="px-5 py-3 font-semibold">Type</th>
+                                                <th class="px-5 py-3 font-semibold">Material</th>
+                                                <th class="px-5 py-3 font-semibold">Key Properties</th>
+                                                <th class="px-5 py-3 font-semibold">Best For</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-100">
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Canvas Tote</td>
+                                                <td class="px-5 py-3">100% Cotton Canvas</td>
+                                                <td class="px-5 py-3">Durable, washable, printable, heavy-duty</td>
+                                                <td class="px-5 py-3">Retail, grocery, everyday use</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Jute Tote</td>
+                                                <td class="px-5 py-3">Natural Jute</td>
+                                                <td class="px-5 py-3">Eco-friendly, biodegradable, rustic finish</td>
+                                                <td class="px-5 py-3">Eco branding, farmers markets, gifting</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Non-Woven Tote</td>
+                                                <td class="px-5 py-3">Polypropylene</td>
+                                                <td class="px-5 py-3">Lightweight, cost-effective, water-resistant</td>
+                                                <td class="px-5 py-3">Promotional events, trade shows</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Recycled PET Tote</td>
+                                                <td class="px-5 py-3">Recycled Polyester</td>
+                                                <td class="px-5 py-3">Sustainable, strong, moisture-resistant</td>
+                                                <td class="px-5 py-3">Eco collections, corporate gifting</td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition">
+                                                <td class="px-5 py-3 font-medium text-[#2d2a26]">Organic Cotton Tote
+                                                </td>
+                                                <td class="px-5 py-3">GOTS Certified Organic Cotton</td>
+                                                <td class="px-5 py-3">Soft, chemical-free, OEKO-TEX® certified</td>
+                                                <td class="px-5 py-3">Premium retail, luxury branding</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Features & Why TajPak -->
+                                <div class="grid md:grid-cols-2 gap-4 sm:gap-6 xl:gap-10">
+                                    <div>
+                                        <p class="mons text-[#6e6a5e] leading-relaxed mb-2 font-semibold text-start">
+                                            Additional features available:</p>
+                                        <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                            <li>• Inner pockets, zip compartments, and card slots</li>
+                                            <li>• Reinforced stitching at handle attachment points</li>
+                                            <li>• Laminated or wax-coated interiors for water resistance</li>
+                                            <li>• Gusset base for increased capacity and stability</li>
+                                            <li>• Custom hang tags, tissue paper, and retail packaging</li>
+                                            <li>• Foldable and packable designs for compact storage</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="mons text-[#6e6a5e] leading-relaxed mb-2 font-semibold text-start">Why
+                                            choose TajPak:</p>
+                                        <ul class="text-[#6e6a5e] mons text-start space-y-2 text-sm">
+                                            <li>• End-to-end manufacturing — fabric sourcing, cutting, sewing,
+                                                finishing, packaging</li>
+                                            <li>• Rigorous quality control at every stage (AQL 1.5 or 2.5 per buyer)
+                                            </li>
+                                            <li>• Competitive pricing for bulk quantities (MOQ 500–2,000 pieces per
+                                                style)</li>
+                                            <li>• Flexible payment terms (T/T, L/C) and shipping options (FOB, CIF, EXW)
+                                            </li>
+                                            <li>• Sample development and tech pack assistance available</li>
+                                            <li>• Private labeling and custom retail packaging included</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 

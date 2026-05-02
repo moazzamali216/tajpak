@@ -17,33 +17,33 @@ window.addEventListener("load", function () {
 const navbar = document.getElementById("navbar");
 const navLinks = document.querySelectorAll("#navbar > div > ul > li > a, #navbar > div > ul > li > button");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 10) {
 
-    // Navbar background
-    navbar.classList.remove("bg-transparent", "py-4");
-    navbar.classList.add("bg-white", "shadow-md", "py-1");
+//     // Navbar background
+//     navbar.classList.remove("bg-transparent", "py-4");
+//     navbar.classList.add("bg-white", "shadow-md", "py-1");
 
-    // Links color
-    navLinks.forEach(link => {
-      link.classList.remove("text-gray-100");
-      link.classList.add("text-gray-700");
-    });
+//     // Links color
+//     navLinks.forEach(link => {
+//       link.classList.remove("text-gray-100");
+//       link.classList.add("text-gray-700");
+//     });
 
-  } else {
+//   } else {
 
-    // Reset navbar
-    navbar.classList.add("bg-transparent", "py-4");
-    navbar.classList.remove("bg-white", "shadow-md", "py-1");
+//     // Reset navbar
+//     navbar.classList.add("bg-transparent", "py-4");
+//     navbar.classList.remove("bg-white", "shadow-md", "py-1");
 
-    // Reset links
-    navLinks.forEach(link => {
-      link.classList.remove("text-gray-700");
-      link.classList.add("text-gray-100");
-    });
+//     // Reset links
+//     navLinks.forEach(link => {
+//       link.classList.remove("text-gray-700");
+//       link.classList.add("text-gray-100");
+//     });
 
-  }
-});
+//   }
+// });
 
 const openMenu = document.getElementById("openMenu");
 const closeMenu = document.getElementById("closeMenu");

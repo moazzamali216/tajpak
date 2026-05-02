@@ -29,7 +29,7 @@
 
 <body class=" bg-gray-50">
     <!-- Dekstop Menu -->
-    <nav id="navbar" class="hidden lg:block w-full px-16 py-4 smooth bg-transparent fixed z-[999] top-0">
+    <nav id="navbar" class="hidden lg:block w-full px-16 py-1.5 smooth bg-white fixed shadow-md z-[999] top-0">
 
         <div class="max-w-7xl mx-auto flex items-center justify-between">
 
@@ -42,17 +42,17 @@
             <!-- Center Menu -->
             <ul class="flex items-center space-x-8 text-sm font-medium">
                 <li><a href="./index.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Home</a></li>
-                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">About
+                        class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Home</a></li>
+                <li><a href="./about.html" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">About
                         Us</a>
                 </li>
                 <li><a href="./services.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Services</a>
+                        class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Services</a>
                 </li>
                 <li class="relative">
                     <button id="dropdownProductsButton" data-dropdown-toggle="dropdownProducts"
                         data-dropdown-placement="bottom-start"
-                        class="flex items-center justify-between w-full text-gray-100 mons hover:text-blue-600 hover:underline smooth"
+                        class="flex items-center justify-between w-full text-gray-700 mons hover:text-blue-600 hover:underline smooth"
                         type="button">
                         Products
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,8 +103,8 @@
                     </div>
                 </li>
                 <li><a href="./sustainability.html"
-                        class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">Sustainability</a></li>
-                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-100 mons smooth">E-Broucher</a>
+                        class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">Sustainability</a></li>
+                <li><a href="" class="hover:text-blue-600 hover:underline text-gray-700 mons smooth">E-Broucher</a>
                 </li>
 
             </ul>
@@ -211,7 +211,7 @@
     <!-- Mobile Menu End -->
 
 
-    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+    <section class="relative h-[500px] mt-[50px] flex items-center justify-center overflow-hidden">
 
         <!-- Background Image -->
         <img loading='lazy' loading='lazy' src="./public/images/apr29.webp"
@@ -451,7 +451,7 @@
 
             <div class="grid lg:grid-cols-12 gap-16 items-stretch">
 
-                <!-- LEFT: LAYERED STORY BLOCK -->
+                <!-- LEFT CONTENT -->
                 <div class="lg:col-span-6 flex flex-col justify-center">
 
                     <p class="text-xs tracking-[0.45em] text-gray-400 mons mb-6">
@@ -469,36 +469,29 @@
                         absorbency, and visual elegance define brand perception.
                     </p>
 
-                    <!-- FEATURE BLOCKS (STACKED CARDS BUT OPEN STYLE) -->
-                    <div class="space-y-7">
+                    <!-- ENGINEERING POINTS -->
+                    <div class="space-y-6 text-sm font-['Raleway']">
 
                         <div>
-                            <p class="text-sm font-semibold text-[#2e3092] mons mb-1">
-                                Textile Engineering Standard
-                            </p>
-                            <p class="text-xs text-gray-500 font-['Raleway']">
-                                Woven with high-density terry loops for controlled absorbency and long-term softness
-                                retention.
+                            <p class="font-semibold text-[#2e3092] mons">Textile Engineering Standard</p>
+                            <p class="text-gray-500 text-xs mt-1">
+                                High-density terry loops using 100% combed cotton or cotton/poly blends (80/20)
+                                for controlled absorbency and long-term softness retention.
                             </p>
                         </div>
 
                         <div>
-                            <p class="text-sm font-semibold text-[#2e3092] mons mb-1">
-                                Hospitality Usage Lifecycle
-                            </p>
-                            <p class="text-xs text-gray-500 font-['Raleway']">
-                                Designed for continuous hotel laundering systems with stable GSM performance and fiber
-                                integrity.
+                            <p class="font-semibold text-[#2e3092] mons">Hospitality Usage Lifecycle</p>
+                            <p class="text-gray-500 text-xs mt-1">
+                                Built for 300+ industrial laundry cycles with stable GSM performance
+                                (400–550 gsm depending on style) and fiber integrity.
                             </p>
                         </div>
 
                         <div>
-                            <p class="text-sm font-semibold text-[#2e3092] mons mb-1">
-                                Customization Capability
-                            </p>
-                            <p class="text-xs text-gray-500 font-['Raleway']">
-                                Available in multiple styles including shawl collar, kimono, and resort-specific branded
-                                designs.
+                            <p class="font-semibold text-[#2e3092] mons">Customization Capability</p>
+                            <p class="text-gray-500 text-xs mt-1">
+                                Available in shawl collar, kimono, and fully branded resort hospitality designs.
                             </p>
                         </div>
 
@@ -514,38 +507,39 @@
 
                 </div>
 
-                <!-- RIGHT: VISUAL STACK PANEL -->
+                <!-- RIGHT VISUAL -->
                 <div class="lg:col-span-6 relative flex justify-end">
 
-                    <div class="relative w-full max-w-[540px]">
+                    <div class="relative w-full lg:max-w-[540px]">
 
-                        <!-- TOP IMAGE -->
+                        <!-- MAIN IMAGE -->
                         <div class="rounded-3xl overflow-hidden shadow-xl group mb-6">
-                            <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/apr30.webp"
+                            <img loading="lazy" src="./public/images/apr30.webp"
                                 class="w-full h-[360px] object-cover transition duration-700 group-hover:scale-105"
                                 alt="Bathrobe Main">
-
-                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition"></div>
+                            <div
+                                class="absolute rounded-3xl h-[585px] inset-0 bg-black/10 group-hover:bg-black/5 transition">
+                            </div>
                         </div>
 
-                        <!-- BOTTOM SMALL DETAIL IMAGE (creates catalog feel) -->
+                        <!-- DETAIL IMAGES -->
                         <div class="grid grid-cols-2 gap-6">
 
                             <div class="rounded-2xl overflow-hidden shadow-md group">
-                                <img loading="lazy" decoding="async" src="./public/images/apr28.webp"
+                                <img loading="lazy" src="./public/images/apr28.webp"
                                     class="w-full h-[200px] object-cover transition duration-700 group-hover:scale-105"
-                                    alt="Detail Fabric">
+                                    alt="Fabric Detail">
                             </div>
 
                             <div class="rounded-2xl overflow-hidden shadow-md group">
-                                <img loading="lazy" decoding="async" src="./public/images/apr29.webp"
+                                <img loading="lazy" src="./public/images/apr29.webp"
                                     class="w-full h-[200px] object-cover transition duration-700 group-hover:scale-105"
-                                    alt="Detail Stitching">
+                                    alt="Stitching Detail">
                             </div>
 
                         </div>
 
-                        <!-- floating label -->
+                        <!-- FLOAT LABEL -->
                         <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow">
                             <p class="text-xs text-gray-400">Collection</p>
                             <p class="text-sm font-semibold mons text-[#2e3092]">
@@ -559,11 +553,36 @@
 
             </div>
 
+            <!-- BOTTOM SPEC TABLE -->
+            <div class="mt-8 mons grid md:grid-cols-4 gap-6 text-sm">
+
+                <div class="bg-[#f8fafc] border rounded-2xl p-5">
+                    <p class="font-semibold mons text-[#2d2a26] mb-1">Terry Cotton</p>
+                    <p class="text-xs text-gray-500">100% cotton – 450 GSM – high absorbency loops</p>
+                </div>
+
+                <div class="bg-[#f8fafc] border rounded-2xl p-5">
+                    <p class="font-semibold mons text-[#2d2a26] mb-1">Velour Finish</p>
+                    <p class="text-xs text-gray-500">80/20 cotton-poly face – luxury sheared surface</p>
+                </div>
+
+                <div class="bg-[#f8fafc] border rounded-2xl p-5">
+                    <p class="font-semibold mons text-[#2d2a26] mb-1">Waffle Weave</p>
+                    <p class="text-xs text-gray-500">Tencel™ blend – 220 GSM – fast drying structure</p>
+                </div>
+
+                <div class="bg-[#f8fafc] border rounded-2xl p-5">
+                    <p class="font-semibold mons text-[#2d2a26] mb-1">Microfiber</p>
+                    <p class="text-xs text-gray-500">Split microfiber – 280 GSM – zero lint finish</p>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
 
-    <section class="relative py-24 bg-white overflow-hidden">
+    <section class="relative pb-16 bg-white overflow-hidden">
 
         <!-- soft background glow -->
         <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-sky-100/40 rounded-full blur-3xl"></div>
@@ -571,23 +590,22 @@
 
         <div class="container mx-auto px-4 2xl:max-w-[1530px] relative z-10">
 
-            <div class="relative flex flex-col lg:flex-row gap-16 items-center">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
 
-                <!-- LEFT: BIG VISUAL (ANCHOR) -->
-                <div class="flex-1 relative">
+                <!-- LEFT IMAGE -->
+                <div class="flex-1 w-full relative">
 
-                    <div class="relative rounded-[2.5rem] overflow-hidden shadow-xl group">
+                    <div class="relative w-full rounded-[2.5rem] overflow-hidden shadow-xl group">
 
-                        <img loading="lazy" decoding="async" fetchpriority="low" src="./public/images/apr26.webp"
+                        <img loading="lazy" src="./public/images/apr26.webp"
                             class="w-full h-[600px] object-cover transition duration-700 group-hover:scale-105 group-hover:brightness-110"
                             alt="Beach and Pool Towels">
 
-                        <!-- soft overlay -->
                         <div class="absolute inset-0 bg-black/15 group-hover:bg-black/10 transition"></div>
 
                     </div>
 
-                    <!-- floating tag -->
+                    <!-- FLOAT LABEL -->
                     <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow">
                         <p class="text-xs text-gray-400">Collection</p>
                         <p class="text-sm font-semibold mons text-[#2e3092]">
@@ -597,10 +615,9 @@
 
                 </div>
 
-                <!-- RIGHT: EDITORIAL CONTENT -->
+                <!-- RIGHT CONTENT -->
                 <div class="flex-1">
 
-                    <!-- heading -->
                     <p class="text-xs tracking-[0.45em] text-gray-400 mons mb-4">
                         RESORT & HOSPITALITY TEXTILES
                     </p>
@@ -616,7 +633,7 @@
                         continuous hospitality washing cycles.
                     </p>
 
-                    <!-- VERTICAL EDITORIAL FEATURE SPINE -->
+                    <!-- EDITORIAL FEATURE SPINE -->
                     <div class="relative pl-8 border-l border-[#2e3092]/20 space-y-8">
 
                         <div>
@@ -624,7 +641,8 @@
                                 Resort Visual Identity
                             </p>
                             <p class="text-xs text-gray-500 font-['Raleway']">
-                                Designed with bold colors and patterns that enhance poolside and beach aesthetics.
+                                Bold colors and patterns enhance poolside and beach aesthetics with custom jacquard or
+                                dobby borders.
                             </p>
                         </div>
 
@@ -633,16 +651,17 @@
                                 High Absorbency Structure
                             </p>
                             <p class="text-xs text-gray-500 font-['Raleway']">
-                                Terry-loop engineering ensures fast drying and efficient water absorption.
-                            </p>
+                                Terry-loop construction ensures rapid drying and high water absorption (sink time < 5
+                                    sec). </p>
                         </div>
 
                         <div>
                             <p class="text-sm font-semibold text-[#2e3092] mons mb-1">
-                                Sun & Chlorine Resistant
+                                Sun & Chlorine Resistance
                             </p>
                             <p class="text-xs text-gray-500 font-['Raleway']">
-                                Colorfast dyes and reinforced fibers maintain quality under harsh outdoor exposure.
+                                Reactive dyeing ensures UV stability and chlorine resistance with 300+ wash cycles
+                                durability.
                             </p>
                         </div>
 
@@ -651,7 +670,7 @@
                                 Hospitality Durability
                             </p>
                             <p class="text-xs text-gray-500 font-['Raleway']">
-                                Built for repeated commercial laundering with stable GSM performance.
+                                Industrial laundering stability with controlled shrinkage (±3% per ISO 6330 standards).
                             </p>
                         </div>
 
@@ -701,7 +720,7 @@
             </div>
 
             <!-- MAIN GRID -->
-            <div class="grid lg:grid-cols-12 gap-14 items-center">
+            <div class="grid lg:grid-cols-12 gap-14 items-start">
 
                 <!-- LEFT CONTENT -->
                 <div class="lg:col-span-6">
@@ -719,50 +738,99 @@
                         <div class="flex gap-3">
                             <span class="w-2 h-2 mt-2 bg-[#2e3092] rounded-full"></span>
                             <div>
-                                <p class="text-sm font-semibold text-[#2e3092] mons">
-                                    Bulk Production Standardization
-                                </p>
-                                <p class="text-xs text-gray-500 font-['Raleway']">
-                                    Uniform quality across large-scale manufacturing batches for institutional orders.
-                                </p>
+                                <p class="text-sm font-semibold text-[#2e3092] mons">Bulk Production Standardization</p>
+                                <p class="text-xs text-gray-500 font-['Raleway']">Uniform quality across large-scale
+                                    manufacturing batches.</p>
                             </div>
                         </div>
 
                         <div class="flex gap-3">
                             <span class="w-2 h-2 mt-2 bg-[#2e3092] rounded-full"></span>
                             <div>
-                                <p class="text-sm font-semibold text-[#2e3092] mons">
-                                    Industrial Laundry Performance
-                                </p>
-                                <p class="text-xs text-gray-500 font-['Raleway']">
-                                    Designed to withstand repeated high-temperature washing cycles without degradation.
-                                </p>
+                                <p class="text-sm font-semibold text-[#2e3092] mons">Industrial Laundry Performance</p>
+                                <p class="text-xs text-gray-500 font-['Raleway']">Withstands 300–400+ high-temperature
+                                    wash cycles.</p>
                             </div>
                         </div>
 
                         <div class="flex gap-3">
                             <span class="w-2 h-2 mt-2 bg-[#2e3092] rounded-full"></span>
                             <div>
-                                <p class="text-sm font-semibold text-[#2e3092] mons">
-                                    Hospital & Hotel Compliance
-                                </p>
-                                <p class="text-xs text-gray-500 font-['Raleway']">
-                                    Meets operational requirements of healthcare facilities and hospitality chains.
-                                </p>
+                                <p class="text-sm font-semibold text-[#2e3092] mons">Hospital & Hotel Compliance</p>
+                                <p class="text-xs text-gray-500 font-['Raleway']">OEKO-TEX® & ISO certified production
+                                    standards.</p>
                             </div>
                         </div>
 
                         <div class="flex gap-3">
                             <span class="w-2 h-2 mt-2 bg-[#2e3092] rounded-full"></span>
                             <div>
-                                <p class="text-sm font-semibold text-[#2e3092] mons">
-                                    Export-Ready Supply Chain
-                                </p>
-                                <p class="text-xs text-gray-500 font-['Raleway']">
-                                    Structured for international buyers, distributors, and long-term contracts.
-                                </p>
+                                <p class="text-sm font-semibold text-[#2e3092] mons">Export-Ready Supply Chain</p>
+                                <p class="text-xs text-gray-500 font-['Raleway']">Structured for global institutional
+                                    procurement.</p>
                             </div>
                         </div>
+
+                    </div>
+
+                    <!-- PRODUCT SPECS (BULLET VERSION) -->
+                    <div class="mt-14">
+
+                        <h3 class="text-lg font-semibold text-[#2d2a26] mons mb-6">
+                            Composite Manufacturing Specifications
+                        </h3>
+
+                        <ul class="space-y-4 text-sm font-['Raleway'] text-gray-600">
+
+                            <li class="flex gap-3">
+                                <span class="w-1.5 h-1.5 mt-2 bg-[#2e3092] rounded-full shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-[#2e3092]">Bed Sheets (Percale):</span>
+                                    52% cotton / 48% polyester · 200 TC · 135 gsm · crisp finish
+                                </div>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="w-1.5 h-1.5 mt-2 bg-[#2e3092] rounded-full shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-[#2e3092]">Bed Sheets (Sateen):</span>
+                                    60% cotton / 40% Tencel™ · 300 TC · 145 gsm · soft luxury feel
+                                </div>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="w-1.5 h-1.5 mt-2 bg-[#2e3092] rounded-full shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-[#2e3092]">Towels:</span>
+                                    100% combed cotton · zero-twist · 500–600 gsm · terry loop
+                                </div>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="w-1.5 h-1.5 mt-2 bg-[#2e3092] rounded-full shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-[#2e3092]">Mattress Protectors:</span>
+                                    Bamboo + recycled polyester top · PU barrier · 120 gsm fill
+                                </div>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="w-1.5 h-1.5 mt-2 bg-[#2e3092] rounded-full shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-[#2e3092]">Scrubs (Medical):</span>
+                                    78% polyester / 22% cotton ripstop · wicking finish · 170 gsm
+                                </div>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <span class="w-1.5 h-1.5 mt-2 bg-[#2e3092] rounded-full shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-[#2e3092]">Blankets (Thermal):</span>
+                                    70% acrylic / 30% recycled polyester · honeycomb weave · 280 gsm
+                                </div>
+                            </li>
+
+                        </ul>
 
                     </div>
 
@@ -785,12 +853,10 @@
                             class="w-full h-[560px] object-cover transition duration-700 group-hover:scale-105 group-hover:brightness-110"
                             alt="Institutional Textile Supply">
 
-                        <!-- overlay -->
                         <div class="absolute inset-0 bg-black/15 group-hover:bg-black/10 transition"></div>
 
                     </div>
 
-                    <!-- floating label -->
                     <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow">
                         <p class="text-xs text-gray-400">Supply Category</p>
                         <p class="text-sm font-semibold mons text-[#2e3092]">
@@ -1050,7 +1116,7 @@
         </div>
         <div class="text-center pb-5 text-sm mons font-light text-gray-400 capitalize">
 
-Developed By
+            Developed By
             <a href="https://wa.me/923224066958" target="_blank" class="text-blue-800 font-semibold hover:underline">
                 MAC
             </a>
@@ -1059,7 +1125,8 @@ Developed By
 
 
 
-        </div></footer>
+        </div>
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
